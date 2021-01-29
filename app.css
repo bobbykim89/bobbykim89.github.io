@@ -1,0 +1,132 @@
+body {
+	background-size: cover;
+	background-position:center;
+	font-family: "Nunito", sans-serif;
+    background: #f1f1f1;
+    
+}
+
+nav {
+    font-weight: 400;
+}
+
+header {
+  background-image: url("imgs/landing_img.jpg");
+  background-position: center top;
+  background-attachment: fixed;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  cursor: context-menu;
+}
+
+@media only screen
+  /* and (min-device-width: 375px) */
+  and (max-width: 750px) {
+    header {
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-attachment: scroll;
+    }
+
+}
+
+.mainheader {
+  width: 50%;
+  margin: 0 auto 0;
+  padding: 8px 0 2px 0;
+  display: inline-block;
+  color: white;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+}
+
+.landing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 480px;
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
+                0px 8px 13px rgba(0, 0, 0, 0.1),
+			    0px 18px 23px rgba(0, 0, 0, 0.1);
+}
+
+@media only screen
+  and (max-width: 750px) {
+    .mainheader {
+      width: 100%;
+      font-weight: bold;
+      color: white;
+      line-height: 1.3em;
+      margin: 0 0 100px 0;
+    }
+
+    .mainheader span {
+      color: white;
+      font-size: 17px;
+      letter-spacing: 1px;
+      line-height: 2em;
+    }
+
+    .landing {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: auto;
+      height: 480px;
+      text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
+                0px 8px 13px rgba(0, 0, 0, 0.1),
+			    0px 18px 23px rgba(0, 0, 0, 0.1);
+    }
+
+}
+
+h1 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;
+  text-align: center;
+  font-style: normal;
+  font-size: 64px;
+  line-height: 1.3em;
+  letter-spacing: .03em;
+  text-transform: none;
+  color: white;
+}
+
+.about-section > .container {
+	text-align: center;
+}
+
+.about-section > .container > .item {
+	height: auto;
+	background-color: white;
+	padding: 20px;
+	margin: 20px;
+	text-align: left;
+	transition: all 0.5s ease;
+}
+
+.about-section > .container > .item:hover {
+	transform: scale(1.015);
+	box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.about-section > .container > .item > .icon > i {
+    font-size: 48px;
+	color: #aaa;
+}
+
+.about-section > .container > .item > .icon> .about {
+	font-size: 32px;
+	font-weight: bold;
+	padding: 10px 0;
+}
+
+
+.about-section > .container > .item > .content {
+	font-size: 16px;
+	font-family: 'Noto Sans KR', sans-serif;
+	letter-spacing: 1.5px;
+	padding: 10px 0;
+}
