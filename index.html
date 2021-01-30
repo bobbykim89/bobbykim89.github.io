@@ -25,7 +25,7 @@
     <title>Bobby Kim</title>
 </head>
 
-<body>
+<body data-bs-spy="scroll" tata-bs-target="#mainNavbar">
     <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-light bg-white py-0 fixed-top">
         <div class="container">
             <a href="#" class="navbar-brand">BOBBY KIM</a>
@@ -37,7 +37,7 @@
             <div class="collapse navbar-collapse text-center justify-content-end" id="navLinks">
                 <ul class="navbar-nav" id="navDropdown">
                     <li class="nav-item">
-                        <a href="#" class="nav-link">HOME</a>
+                        <a href="#landing" class="nav-link">HOME</a>
                     </li>
             
                     <li class="nav-item">
@@ -45,7 +45,7 @@
                     </li>
             
                     <li class="nav-item">
-                        <a href="" class="nav-link">EXPERIENCE</a>
+                        <a href="#experience" class="nav-link">EXPERIENCE</a>
                     </li>
 
                     <li class="nav-item">
@@ -57,7 +57,7 @@
     </nav>
 
     <header>
-        <div class="container-fluid landing">
+        <div class="container-fluid landing" id="landing">
             <div class="landing-name">
                 <h1>HI, THIS IS BOBBY!</h1>
                 
@@ -75,94 +75,208 @@
 
     <section class="about-section" id="about">
 
-        <div class="container d-flex">
-    
-            <div class="item">
-                <div class="icon">
-                    <i class="fas fa-code"></i>
-                    <h2 class="about">Web Administrator</h2>                
+        <div class="container">
+            <div class="row justify-content-around">
+                <span class="col-md-4"></span>
+                <h2 class="col-md-4 aName">About</h2>
+                <span class="col-md-4"></span>
+            
+            </div>
+
+            <div class="itemBox d-flex">
+                <div class="item">
+                    <div class="icon">
+                        <i class="fas fa-code"></i>
+                        <h2 class="about">Web Administrator</h2>
+                    </div>
+                
+                    <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris semper molestie nulla, in pretium
+                        enim gravida quis. In
+                        quis orci tristique orci tincidunt lacinia pulvinar sodales ipsum. Curabitur turpis elit, ultricies sed odio ac,
+                        semper
+                        dictum ante. Aenean varius nulla quam. Integer elementum ultrices neque, quis sagittis mauris tempus nec. Sed
+                        efficitur
+                        lectus in turpis convallis pretium. Aenean congue faucibus varius. Proin eget eleifend nibh, ac iaculis arcu.
+                        Sed nec
+                        ultricies elit. Morbi sed felis placerat, tincidunt tortor at, pretium diam. Nam vehicula, magna sed accumsan
+                        commodo,
+                        nibh lacus iaculis nisi, ut aliquam sapien elit id tellus.</p>
                 </div>
                 
-                <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris semper molestie nulla, in pretium enim gravida quis. In
-                quis orci tristique orci tincidunt lacinia pulvinar sodales ipsum. Curabitur turpis elit, ultricies sed odio ac, semper
-                dictum ante. Aenean varius nulla quam. Integer elementum ultrices neque, quis sagittis mauris tempus nec. Sed efficitur
-                lectus in turpis convallis pretium. Aenean congue faucibus varius. Proin eget eleifend nibh, ac iaculis arcu. Sed nec
-                ultricies elit. Morbi sed felis placerat, tincidunt tortor at, pretium diam. Nam vehicula, magna sed accumsan commodo,
-                nibh lacus iaculis nisi, ut aliquam sapien elit id tellus.</p>
-            </div>
-    
-            <div class="item">
-                <div class = "icon">
-                    <i class="fas fa-microchip" aria-hidden="true"></i>
-                    <h2 class="about">Technical Support</h2>
+                <div class="item">
+                    <div class="icon">
+                        <i class="fas fa-tools"></i></i>
+                        <h2 class="about">Technical Support</h2>
+                    </div>
+                
+                    <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris semper molestie nulla, in pretium
+                        enim gravida quis. In
+                        quis orci tristique orci tincidunt lacinia pulvinar sodales ipsum. Curabitur turpis elit, ultricies sed odio ac,
+                        semper
+                        dictum ante. Aenean varius nulla quam. Integer elementum ultrices neque, quis sagittis mauris tempus nec. Sed
+                        efficitur
+                        lectus in turpis convallis pretium. Aenean congue faucibus varius. Proin eget eleifend nibh, ac iaculis arcu.
+                        Sed nec
+                        ultricies elit. Morbi sed felis placerat, tincidunt tortor at, pretium diam. Nam vehicula, magna sed accumsan
+                        commodo,
+                        nibh lacus iaculis nisi, ut aliquam sapien elit id tellus.</p>
                 </div>
                 
-                <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris semper molestie nulla, in pretium enim gravida quis. In
-                quis orci tristique orci tincidunt lacinia pulvinar sodales ipsum. Curabitur turpis elit, ultricies sed odio ac, semper
-                dictum ante. Aenean varius nulla quam. Integer elementum ultrices neque, quis sagittis mauris tempus nec. Sed efficitur
-                lectus in turpis convallis pretium. Aenean congue faucibus varius. Proin eget eleifend nibh, ac iaculis arcu. Sed nec
-                ultricies elit. Morbi sed felis placerat, tincidunt tortor at, pretium diam. Nam vehicula, magna sed accumsan commodo,
-                nibh lacus iaculis nisi, ut aliquam sapien elit id tellus.</p>
+                <div class="item">
+                    <div class="icon">
+                        <i class="far fa-edit"></i>
+                        <h2 class="about">Editor</h2>
+                    </div>
+                
+                    <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris semper molestie nulla, in pretium
+                        enim gravida quis. In
+                        quis orci tristique orci tincidunt lacinia pulvinar sodales ipsum. Curabitur turpis elit, ultricies sed odio ac,
+                        semper
+                        dictum ante. Aenean varius nulla quam. Integer elementum ultrices neque, quis sagittis mauris tempus nec. Sed
+                        efficitur
+                        lectus in turpis convallis pretium. Aenean congue faucibus varius. Proin eget eleifend nibh, ac iaculis arcu.
+                        Sed nec
+                        ultricies elit. Morbi sed felis placerat, tincidunt tortor at, pretium diam. Nam vehicula, magna sed accumsan
+                        commodo,
+                        nibh lacus iaculis nisi, ut aliquam sapien elit id tellus.</p>
+                </div>
             </div>
     
-            <div class="item">
-                <div class="icon">
-                    <i class="far fa-newspaper"></i>
-                    <h2 class="about">Editor</h2>
-                </div>
-                
-                <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris semper molestie nulla, in pretium enim gravida quis. In
-                quis orci tristique orci tincidunt lacinia pulvinar sodales ipsum. Curabitur turpis elit, ultricies sed odio ac, semper
-                dictum ante. Aenean varius nulla quam. Integer elementum ultrices neque, quis sagittis mauris tempus nec. Sed efficitur
-                lectus in turpis convallis pretium. Aenean congue faucibus varius. Proin eget eleifend nibh, ac iaculis arcu. Sed nec
-                ultricies elit. Morbi sed felis placerat, tincidunt tortor at, pretium diam. Nam vehicula, magna sed accumsan commodo,
-                nibh lacus iaculis nisi, ut aliquam sapien elit id tellus.</p>
-            </div>
+            
         </div>
     </section>
     </div>
     
     <section class="technicalSkills">
         <div class="container">
-            <h3 class="tcName">Technical Skills</h3>
-            <div class="tcGroup">
-                <div class="skillsRow">
-                    <p class="skillType">Programming Languages</p>
-                    <p>HTML</p>
-                    <p>CSS</p>
-                    <p>JavaScript</p>
-                    <p>Python</p>
-                    <p>MATLAB</p>
-                    <p>SQL</p>
-                    <p>R</p>
-                    <p>Visual Basic</p>
+            <div class="row justify-content-around">
+                <span class="col-md-3"></span>
+                <h2 class="col-md-6 tsName">Technical Skills</h2>
+                <span class="col-md-3"></span>
+
+            </div>
+            
+            <div class="row">
+                <div class="col-md-6 item">
+                    <p class="skillType"><i class="fas fa-file-code"></i> Programming</p>
+                    <img src="imgs/htmlcssjs.png" alt="" height="70px">
+                    <img src="imgs/python.png" alt="" height="70px">
+                    <img src="imgs/rlogo.png" alt="" height="70px">
+                    <img src="imgs/matlab.png" alt="" height="70px">
+                    <img src="imgs/vscode.png" alt="" height="70px">
+                
                 </div>
-                <div class="skillsRow">
-                    <p class="skillType">CAD Programs</p>
-                    <p>SolidWorks</p>
-                    <p>ANSYS</p>
-                    <p>AutoCAD</p>
-                    <p>Creo</p>
-                    <p>Catia</p>
-                    <p>Inventor</p>
-                </div>
-                <div class="skillsRow">
-                    <p class="skillType">Graphic Programs</p>
-                    <p>Adobe InDesign</p>
-                    <p>Adobe Illustrator</p>
-                    <p>Adobe Photoshop</p>
-                </div>
-                <div class="skillsRow">
-                    <p class="skillType">Platforms</p>
-                    <p>WordPress</p>
-                    <p>Windows</p>
-                    <p>Linux</p>
-                    <p>Mac OS</p>
-                    <p>Android</p>
+                <div class="col-md-6 item">
+                    <p class="skillType"><i class="fas fa-camera"></i> Graphic</p>
+                    <img src="imgs/indesign.png" alt="" height="70px">
+                    <img src="imgs/illustrator.png" alt="" height="70px">
+                    <img src="imgs/ps.png" alt="" height="70px">
                 </div>
             </div>
-        </div>
+            
+            <div class="row">
+                <div class="col-md-6 item">
+                    <p class="skillType"><i class="fas fa-laptop"></i> Platforms</p>
+                    <img src="imgs/windows.png" alt="" height="70px">
+                    <img src="imgs/apple.png" alt="" height="70px">
+                    <img src="imgs/ubuntu-icon.png" alt="" height="70px">
+                </div>
+                
+                <div class="col-md-6 item">
+                    <p class="skillType"><i class="fas fa-drafting-compass"></i> CAD</p>
+                    <img src="imgs/ansys_logo.png" alt="" height="70px">
+                    <img src="imgs/autocad.png" alt="" height="70px">
+                    <img src="imgs/Solidworks.png" alt="" height="70px">
+                    <img src="imgs/catia.png" alt="" height="70px">
+                </div>
+            </div>
+        </div>        
+
+    </section >        
+
+    <section class="xPerience" id="experience">
+        <div class="row justify-content-around">
+            <span class="col-md-4"></span>
+            <h2 class="col-md-4 xpName">Experiences</h2>
+            <span class="col-md-4"></span>
         
+        </div>
+        <div class="container-fluid" ontochstart="">
+            <div class="row">
+                <div class="col-12 col-lg-3 expBox">
+                    <img class="koreatimes img-fluid" src="imgs/newspaper.jpg" alt="">
+                    <div class="koreatimes-filter overlay">
+                        <h3>Korea Times</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at nulla nec mauris luctus laoreet.
+                            Quisque eros velit,
+                            auctor in convallis id, gravida et risus. Ut eget pharetra turpis. Morbi sed libero nibh. In nec
+                            orci in mi mollis
+                            aliquet.</p>
+                    </div>
+                </div>
+        
+                <div class="col-12 col-lg-3 nopadding expBox">
+                    <img class="koreatimes img-fluid" src="imgs/computer.jpg" alt="">
+                    <div class="koreatimes-filter overlay">
+                        <h3>Computer Consultant</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at nulla nec mauris luctus laoreet.
+                            Quisque
+                            eros velit,
+                            auctor in convallis id, gravida et risus. Ut eget pharetra turpis. Morbi sed libero nibh. In nec
+                            orci in mi
+                            mollis
+                            aliquet.</p>
+                    </div>
+                </div>
+        
+                <div class="col-12 col-lg-3 nopadding expBox">
+                    <img class="koreatimes img-fluid" src="imgs/engine.jpg" alt="">
+                    <div class="koreatimes-filter overlay">
+                        <h3>Caterpillar Project</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at nulla nec mauris luctus laoreet.
+                            Quisque
+                            eros velit,
+                            auctor in convallis id, gravida et risus. Ut eget pharetra turpis. Morbi sed libero nibh. In nec
+                            orci in mi
+                            mollis
+                            aliquet.</p>
+                    </div>
+                </div>
+        
+                <div class="col-12 col-lg-3 nopadding expBox">
+                    <img class="koreatimes img-fluid" src="imgs/coding.jpg" alt="">
+                    <div class="koreatimes-filter overlay">
+                        <h3>Computing in IE Project</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at nulla nec mauris luctus laoreet.
+                            Quisque
+                            eros velit,
+                            auctor in convallis id, gravida et risus. Ut eget pharetra turpis. Morbi sed libero nibh. In nec
+                            orci in mi
+                            mollis
+                            aliquet.</p>
+                    </div>
+                </div>
+        
+            </div>
+        
+        </div>
+
+    </section>
+    
+    <section class="contactSection" id="contact">
+        <div class="container">
+            <h3 class="cName">Contact</h3>
+            <div class="contIcons">
+                <a href="https://www.linkedin.com/in/bobby-kim-9baa17165/" target="_blank" class="fab fa-linkedin"></a>
+                <a href="https://github.com/bobbykim89" target="_blank" class="fab fa-github-square"></a>
+                <a href="mailto:bobby.sihun.kim@gmail.com" target="_blank" class="fas fa-envelope-square"></a>
+            </div>
+            <div class = contMessage>
+                <p>Lombard, Illinois <i class="fas fa-home"></i></p>
+                <p>Let`s get in touch!</p>
+            </div>
+
+        </div>
 
     </section>
 
