@@ -9,6 +9,9 @@
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Nunito+Sans:wght@300;400&display=swap" rel="stylesheet">
 
+    <!-- jQuery  -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.js"
+        integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin="anonymous"></script>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
@@ -27,12 +30,12 @@
         <div class="container">
             <a href="#" class="navbar-brand">BOBBY KIM</a>
             
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navLinks"
-                aria-label="toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navLinks"
+                aria-controls="navLinks" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse text-center justify-content-end" id="navLinks">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav" id="navDropdown">
                     <li class="nav-item">
                         <a href="#" class="nav-link">HOME</a>
                     </li>
@@ -57,6 +60,7 @@
         <div class="container-fluid landing">
             <div class="landing-name">
                 <h1>HI, THIS IS BOBBY!</h1>
+                
             </div>
             <div class="mainheader row justify-content-around">
                 <div class="col-lg-12 justify-content-center">
@@ -71,7 +75,7 @@
 
     <section class="about-section" id="about">
 
-        <div class="container">
+        <div class="container d-flex">
     
             <div class="item">
                 <div class="icon">
@@ -117,11 +121,52 @@
         </div>
     </section>
     </div>
-
-    <!-- jQuery Bootstrap Bundle with Popper -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.js"
-        integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin="anonymous"></script>
     
+    <section class="technicalSkills">
+        <div class="container">
+            <h3 class="tcName">Technical Skills</h3>
+            <div class="tcGroup">
+                <div class="skillsRow">
+                    <p class="skillType">Programming Languages</p>
+                    <p>HTML</p>
+                    <p>CSS</p>
+                    <p>JavaScript</p>
+                    <p>Python</p>
+                    <p>MATLAB</p>
+                    <p>SQL</p>
+                    <p>R</p>
+                    <p>Visual Basic</p>
+                </div>
+                <div class="skillsRow">
+                    <p class="skillType">CAD Programs</p>
+                    <p>SolidWorks</p>
+                    <p>ANSYS</p>
+                    <p>AutoCAD</p>
+                    <p>Creo</p>
+                    <p>Catia</p>
+                    <p>Inventor</p>
+                </div>
+                <div class="skillsRow">
+                    <p class="skillType">Graphic Programs</p>
+                    <p>Adobe InDesign</p>
+                    <p>Adobe Illustrator</p>
+                    <p>Adobe Photoshop</p>
+                </div>
+                <div class="skillsRow">
+                    <p class="skillType">Platforms</p>
+                    <p>WordPress</p>
+                    <p>Windows</p>
+                    <p>Linux</p>
+                    <p>Mac OS</p>
+                    <p>Android</p>
+                </div>
+            </div>
+        </div>
+        
+
+    </section>
+
+    <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
         crossorigin="anonymous"></script>
