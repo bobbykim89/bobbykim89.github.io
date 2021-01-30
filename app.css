@@ -197,7 +197,7 @@ h1 {
   border-color :  #e77d19;
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 1280px) {
   .technicalSkills > .container > .tcGroup {
     padding-left: 0;
   }
