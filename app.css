@@ -10,6 +10,18 @@ nav {
     font-weight: 400;
 }
 
+#navDropdown {
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none !important;
+    box-shadow: none;
+}
+
 header {
   background-image: url("imgs/pexels-karol-d-841228.jpg");
   background-position: center top;
@@ -17,10 +29,12 @@ header {
   background-size: 100%;
   background-repeat: no-repeat;
   cursor: context-menu;
+  border-left: 54px solid #e77d19;
+  padding-right: 54px;
+  margin-bottom: 15px;
 }
 
 @media only screen
-  /* and (min-device-width: 375px) */
   and (max-width: 750px) {
     header {
       background-size: cover;
@@ -34,9 +48,10 @@ header {
 .mainheader {
   width: 50%;
   margin: 0 auto 0;
-  padding: 8px 0 2px 0;
+  padding: 20px 0 2px 0;
   display: inline-block;
   color: white;
+  border-top: 8px solid #e77d19;
   text-align: center;
   outline: none;
   text-decoration: none;
@@ -46,10 +61,10 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 480px;
+  height: 450px;
   text-shadow: 3px 4px 3px rgba(0, 0, 0, 1),
                 0px 8px 13px rgba(0, 0, 0, 0.1),
-			    0px 18px 23px rgba(0, 0, 0, 0.1);
+			          0px 18px 23px rgba(0, 0, 0, 0.1);
 }
 
 @media only screen
@@ -59,7 +74,7 @@ header {
       font-weight: bold;
       color: white;
       line-height: 1.3em;
-      margin: 0 0 100px 0;
+      margin: 0 0 60px 0;
     }
 
     .mainheader span {
@@ -74,10 +89,14 @@ header {
       flex-direction: column;
       justify-content: center;
       margin: auto;
-      height: 480px;
+      height: 450px;
       text-shadow: 3px 4px 3px rgba(0, 0, 0, 1),
-                0px 8px 13px rgba(0, 0, 0, 0.1),
-			    0px 18px 23px rgba(0, 0, 0, 0.1);
+                    0px 8px 13px rgba(0, 0, 0, 0.1),
+			              0px 18px 23px rgba(0, 0, 0, 0.1);
+    }
+
+    .landing-name {
+      margin-top: 60px;
     }
 
 }
@@ -95,16 +114,19 @@ h1 {
 }
 
 .about-section > .container {
-	text-align: center;
+  text-align: center;
+  border-bottom : 20px solid #e77d19;
+  margin-bottom : 20px;
+  padding-bottom : 20px;
+  flex-direction: row;
 }
 
 .about-section > .container > .item {
-	height: auto;
+	height : auto;
 	background-color: white;
-	padding: 20px;
-	margin: 20px;
-	text-align: left;
-	transition: all 0.5s ease;
+	padding : 20px;
+	margin : 10px;
+	transition : all 0.5s ease;
 }
 
 .about-section > .container > .item:hover {
@@ -113,8 +135,9 @@ h1 {
 }
 
 .about-section > .container > .item > .icon > i {
-    font-size: 48px;
-	color: #e95d3c;
+  font-size: 48px;
+  color: #e95d3c;
+  text-align: center;
 }
 
 .about-section > .container > .item > .icon> .about {
@@ -123,10 +146,66 @@ h1 {
 	padding: 10px 0;
 }
 
-
 .about-section > .container > .item > .content {
-	font-size: 16px;
-	font-family: 'Noto Sans KR', sans-serif;
-	letter-spacing: 1.5px;
-	padding: 10px 0;
+	font-size : 16px;
+	letter-spacing : 1.5px;
+  padding : 10px 0;
+  text-align : left;
+}
+
+@media only screen
+  and (max-width: 750px) {
+  .about-section > .container {
+    flex-direction : column;
+    margin: 0 auto;
+  }
+}
+
+.technicalSkills > .container {
+  text-align: left;
+}
+.technicalSkills > .container > .tcName {
+  font-size : 32px;
+  font-weight : 600;
+  padding : 10px 0;
+}
+
+.technicalSkills > .container > .tcGroup {
+  justify-content: center;
+  padding-left : 10%;
+}
+
+.technicalSkills > .container > .tcGroup > .skillsRow {
+  display : flex;
+  flex-direction : row;
+  justify-content : left;
+  text-align : center;
+}
+
+.technicalSkills > .container > .tcGroup > .skillsRow > p {
+  border: 1px solid;
+  border-radius : 2px;
+  margin : 5px;
+  padding : 5px 15px;
+  background-color : white;
+  border-color : white;
+  font-weight : bold;
+  transition : all 0.5s ease;
+}
+
+.technicalSkills > .container > .tcGroup > .skillsRow > .skillType {
+  background-color :  #e77d19;
+  border-color :  #e77d19;
+}
+
+@media only screen and (max-width: 750px) {
+  .technicalSkills > .container > .tcGroup {
+    padding-left: 0;
+  }
+
+  .technicalSkills > .container > .tcGroup > .skillsRow {
+    flex-direction: column;
+    width : 60%;
+    margin : auto;
+  }
 }
