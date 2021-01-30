@@ -40,6 +40,8 @@ header {
       background-position: center center;
       background-repeat: no-repeat;
       background-attachment: scroll;
+      border-left: 20px solid #e77d19;
+      padding-right: 0;
     }
 
 }
