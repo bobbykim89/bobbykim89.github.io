@@ -201,6 +201,12 @@ h1 {
   .technicalSkills > .container > .tcGroup {
     padding-left: 0;
   }
+}
+
+@media only screen and (max-width: 750px) {
+  .technicalSkills > .container > .tcGroup {
+    padding-left: 0;
+  }
 
   .technicalSkills > .container > .tcGroup > .skillsRow {
     flex-direction: column;
