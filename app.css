@@ -9,7 +9,8 @@ body {
 /* css for navBar */
 nav {
     font-weight: 400;
-}
+    opacity: .8;
+  }
 
 #navDropdown {
   flex-direction: row;
@@ -51,6 +52,7 @@ header {
 
 
 .mainheader {
+  font-family: 'Montserrat', sans-serif;
   width: 50%;
   margin: 0 auto 0;
   padding: 20px 0 2px 0;
@@ -107,7 +109,7 @@ header {
 }
 
 h1 {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   text-align: center;
   font-style: normal;
@@ -129,7 +131,7 @@ h1 {
 }
 
 .about-section > .container > .row > .aName {
-  font-family : 'Lato', sans-serif;
+  font-family : 'Montserrat', sans-serif;
   font-size : 64px;
   font-weight : 600;
   line-height: 1.3em;
@@ -161,7 +163,7 @@ h1 {
 }
 
 .about-section > .container > .itemBox > .item > .icon> .about {
-  font-family : 'Lato', sans-serif;
+  font-family : 'Montserrat', sans-serif;
 	font-size: 32px;
 	font-weight: bold;
 	padding: 10px 0;
@@ -196,7 +198,7 @@ h1 {
 }
 
 .technicalSkills > .container > .row > .tsName {
-  font-family : 'Lato', sans-serif;
+  font-family : 'Montserrat', sans-serif;
   font-size : 64px;
   font-weight : 600;
   line-height: 1.3em;
@@ -218,7 +220,7 @@ h1 {
 }
 
 .technicalSkills > .container > .row > .item > .skillType {
-  font-family : 'Lato', sans-serif;
+  font-family : 'Montserrat', sans-serif;
 	font-size: 40px;
 	font-weight: bold;
   padding: 10px 0;
@@ -252,7 +254,7 @@ h1 {
 /* css for experience section */
 
 .xPerience > .row > .xpName {
-  font-family : 'Lato', sans-serif;
+  font-family : 'Montserrat', sans-serif;
   font-size : 64px;
   font-weight : 600;
   line-height: 1.3em;
@@ -367,7 +369,7 @@ h1 {
 }
 
 .contactSection > .container > .cName {
-  font-family : 'Lato', sans-serif;
+  font-family : 'Montserrat', sans-serif;
   font-size : 64px;
   font-weight : 600;
   line-height: 1.3em;
@@ -398,7 +400,7 @@ h1 {
 }
 
 .contactSection > .container > .contMessage {
-  font-family : 'Lato', sans-serif;
+  font-family : 'Montserrat', sans-serif;
   text-align: right;
   font-size: 34px;
   padding-right: 30px;
