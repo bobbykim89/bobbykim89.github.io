@@ -339,13 +339,13 @@ h1 {
   padding: 0 40px;
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 1200px) {
   .xPerience > .container-fluid > .row > .expBox > .overlay {
     height : 100%;
   }
 
   .xPerience > .container-fluid > .row > .expBox > img {
-    height : 400px;
+    height : 500px;
   }
 }
 
