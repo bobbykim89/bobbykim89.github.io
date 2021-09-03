@@ -23,10 +23,10 @@ Design Tools - inDesign, Photoshop, Illustrator
 
 ### `Projects`
 
-Manguito Page
-Mango Planner
-Nadia Flores Portfolio
-Koreatimes Chicago
+Manguito Page\
+Mango Planner\
+Nadia Flores Portfolio\
+Koreatimes Chicago\
 
 \*\* Need to think if I should add tutorial projects
 
@@ -34,14 +34,14 @@ Koreatimes Chicago
 
 ## Dependencies to use
 
-Tailwind CSS
-autoprefixer
-postcss
-Hamburger-react
-react-router-dom ?
-React-helmet-async
+Tailwind CSS\
+autoprefixer\
+postcss\
+Hamburger-react\
+react-router-dom ?\
+React-helmet-async\
 
 ### Dev Dependencies
 
-chokidar-cli
-concurrently
+chokidar-cli\
+concurrently\
