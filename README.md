@@ -26,7 +26,7 @@ Design Tools - inDesign, Photoshop, Illustrator
 Manguito Page\
 Mango Planner\
 Nadia Flores Portfolio\
-Koreatimes Chicago\
+Koreatimes Chicago
 
 \*\* Need to think if I should add tutorial projects
 
@@ -39,9 +39,9 @@ autoprefixer\
 postcss\
 Hamburger-react\
 react-router-dom ?\
-React-helmet-async\
+React-helmet-async
 
 ### Dev Dependencies
 
 chokidar-cli\
-concurrently\
+concurrently
