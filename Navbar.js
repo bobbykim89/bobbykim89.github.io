@@ -15,7 +15,11 @@ const Navbar = ({ title, about, skills, projects, contact }) => {
     }
   });
   return (
-    <nav className='container w-full top-0 md:sticky flex flex-wrap items-center z-50 transition ease-in duration-500 delay justify-between font-inter'>
+    <nav
+      className={'container w-full top-0 md:sticky flex flex-wrap items-center z-50 transition ease-in duration-500 delay justify-between font-inter'(
+        navScroll ? ' bg-white bg-opacity-70 shadow-md' : ' bg-transparent'
+      )}
+    >
       <div className='flex flex-shrink-0 mr-6 py-2 self-center'>
         <a href='/'>
           <span className='inline-block text-black text-2xl font-bold align-middle pl-6'>
