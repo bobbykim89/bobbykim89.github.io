@@ -36,16 +36,14 @@ const Nav = () => {
           </div>
         </div>
         <div className='w-full text-lg self-center text-center align-middle'>
-          <div className='hover:bg-gray-800 hover:text-green-400 py-4 '>
-            <a href='/'>ABOUT</a>
-          </div>
-          <div className='hover:bg-gray-800 hover:text-green-400 py-4'>
-            <a href='/'>SKILLS</a>
-          </div>
-          <div className='hover:bg-gray-800 hover:text-green-400 py-4'>
+          <div className='hover:bg-gray-800 hover:text-green-400 py-4 transition ease-in'>
             <a href='/'>PROJECTS</a>
           </div>
-          <div className='hover:bg-gray-800 hover:text-green-400 py-4'>
+          <div className='hover:bg-gray-800 hover:text-green-400 py-4 transition ease-in'>
+            <a href='/'>ABOUT</a>
+          </div>
+
+          <div className='hover:bg-gray-800 hover:text-green-400 py-4 transition ease-in'>
             <a href='/'>CONTACT</a>
           </div>
         </div>
