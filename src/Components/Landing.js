@@ -27,12 +27,12 @@ const Landing = () => {
               type: 'circle',
             },
             opacity: {
-              value: 0.5,
+              value: 0.3,
               random: true,
               anim: {
                 enable: true,
                 speed: 1,
-                opacity_min: 0.5,
+                opacity_min: 0.3,
                 sync: false,
               },
             },
@@ -112,9 +112,9 @@ const Landing = () => {
         }}
       />
 
-      <div className='container w-5/6 relative mx-auto mt-60'>
-        <div className='mb-2 lg:mb-6'>
-          <h1 className='inline-block text-3xl lg:text-6xl font-bold lg:tracking-wider leading-normal mb-4'>
+      <div className='relative inline-block mx-auto mt-60 ml-8 lg:ml-20'>
+        <div className='inline mb-2 lg:mb-6'>
+          <h1 className='text-3xl lg:text-6xl font-bold lg:tracking-wider leading-normal mb-4'>
             Hi, this is <span className='text-green-500'>Bobby</span>!
             <br />I am a <span className='text-pink-600'>web</span> Developer
           </h1>
@@ -122,13 +122,13 @@ const Landing = () => {
         <div className='inline-block flex flex-wrap justify-center lg:justify-start text-md lg:text-2xl font-semibold tracking-wider'>
           <a
             href='/'
-            className='px-6 lg:px-8 py-2 lg:py-3 border-2 border-white  lg:ml-4 hover:bg-green-500 hover:text-white hover:border-green-500 hover:bg-opacity-80 transition ease-in'
+            className='px-6 lg:px-8 py-2 lg:py-3 border border-white  lg:ml-4 hover:bg-green-500 hover:text-white hover:border-green-500 hover:bg-opacity-80 transition ease-in'
           >
             Resume
           </a>
           <a
             href='/'
-            className='px-6 lg:px-8 py-2 lg:py-3 border-2 border-white  ml-6 hover:bg-pink-500 hover:text-white hover:border-pink-500 hover:bg-opacity-80 transition ease-in'
+            className='px-6 lg:px-8 py-2 lg:py-3 border border-white  ml-6 hover:bg-pink-500 hover:text-white hover:border-pink-500 hover:bg-opacity-80 transition ease-in'
           >
             Contact
           </a>

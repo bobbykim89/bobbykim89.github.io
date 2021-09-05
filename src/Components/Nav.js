@@ -17,7 +17,7 @@ const Nav = () => {
       </div>
       <nav
         className={
-          'w-screen md:w-40 md:h-screen text-white bg-black items-center shadow-lg transition ease-in' +
+          'w-full md:sticky md:top-0 md:w-40 md:h-screen text-white bg-black items-center shadow-lg transition ease-in' +
           (navBarOpen ? ' h-screen inset-0' : ' hidden md:block')
         }
       >
