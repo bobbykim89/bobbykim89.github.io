@@ -135,11 +135,13 @@ const Landing = () => {
         </div>
       </div>
       <div className='absolute block inset-x-0 bottom-0'>
-        <div className='mb-6 flex justify-center relative animate-bounce text-white cursor-pointer'>
-          <i className='block material-icons text-2xl px-2 py-2 border border-gray-400 rounded-full '>
-            expand_more
-          </i>
-        </div>
+        <a href='#projects'>
+          <div className='mb-6 flex justify-center relative animate-bounce text-white cursor-pointer'>
+            <i className='block material-icons text-2xl px-2 py-2 border border-gray-400 rounded-full '>
+              expand_more
+            </i>
+          </div>
+        </a>
       </div>
     </section>
   );
