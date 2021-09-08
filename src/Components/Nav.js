@@ -127,7 +127,7 @@ const Nav = ({ navBarOpen, setNavbarOpen }) => {
             variants={hoverVariants}
             whileHover='hover'
           >
-            <a href='/'>PROJECTS</a>
+            <a href='/#projects'>PROJECTS</a>
           </motion.div>
           <motion.div
             className='hover:bg-gray-800 hover:text-green-400 py-4 transition ease-in'

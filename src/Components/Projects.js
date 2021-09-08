@@ -1,27 +1,6 @@
 import React from 'react';
 import ProjectList from './data/ProjectList';
-import { motion, useCycle } from 'framer-motion';
-
-const projectVariants = {
-  hidden: {
-    opacity: 0,
-  },
-  hover: {
-    opacity: 1,
-    transition: {
-      duration: 0.5,
-    },
-  },
-  buttonHover: {
-    scale: [1, 1.1, 1],
-    rotateZ: [0, -5, 0, 5, 0],
-    transition: {
-      duration: 0.5,
-      ease: 'linear',
-      repeat: Infinity,
-    },
-  },
-};
+import ProjectChild from './layouts/ProjectChild';
 
 const Projects = () => {
   return (
@@ -35,52 +14,7 @@ const Projects = () => {
       <div className='grid grid-flow-row md:grid-cols-4'>
         {ProjectList &&
           ProjectList.map((project) => (
-            <div
-              className='relative overflow-hidden aspect-w-1 aspect-h-1'
-              key={project.id}
-            >
-              <motion.div
-                className='z-10 mx-auto pt-10 bg-black bg-opacity-80'
-                variants={projectVariants}
-                initial='hidden'
-                whileHover='hover'
-              >
-                <h1 className='text-center mb-8 text-2xl font-semibold'>
-                  {project.name}
-                </h1>
-                <div className='flex flex-wrap justify-center mb-4 mx-3'>
-                  {project &&
-                    project.technologies.map((tech) => (
-                      <span
-                        className='px-3 py-2 mx-1 bg-gray-700 rounded-lg mb-2 shadow-md cursor-default'
-                        key={tech}
-                      >
-                        {tech}
-                      </span>
-                    ))}
-                </div>
-                <div className='text-center'>
-                  <motion.div
-                    className='inline-block  p-4 bg-yellow-500 rounded-full text-center cursor-pointer'
-                    variants={projectVariants}
-                    whileHover='buttonHover'
-                  >
-                    <small>
-                      View
-                      <br />
-                      Project
-                    </small>
-                  </motion.div>
-                </div>
-              </motion.div>
-              <div className='absolute'>
-                <img
-                  src={project.image1}
-                  alt=''
-                  className='object-cover object-center'
-                />
-              </div>
-            </div>
+            <ProjectChild project={project} key={project.id} />
           ))}
       </div>
     </section>
