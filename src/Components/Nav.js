@@ -87,8 +87,15 @@ const menuVariants = {
 };
 
 const hoverVariants = {
+  initial: {
+    scale: 1,
+  },
   hover: {
     scale: 1.1,
+
+    transition: {
+      duration: 0.3,
+    },
   },
 };
 
@@ -117,7 +124,7 @@ const Nav = ({ navBarOpen, setNavbarOpen }) => {
           </div>
         </motion.div>
         <motion.div
-          className='w-full text-lg self-center text-center align-middle'
+          className='w-full text-lg self-center text-center align-middle overflow-hidden'
           variants={menuVariants}
           initial='menuIniMd'
           animate='menuInMd'
@@ -125,14 +132,18 @@ const Nav = ({ navBarOpen, setNavbarOpen }) => {
           <motion.div
             className='hover:bg-gray-800 hover:text-green-400 py-4 transition ease-in'
             variants={hoverVariants}
+            initial='initial'
             whileHover='hover'
+            animate='initial'
           >
             <a href='/#projects'>PROJECTS</a>
           </motion.div>
           <motion.div
             className='hover:bg-gray-800 hover:text-green-400 py-4 transition ease-in'
             variants={hoverVariants}
+            initial='initial'
             whileHover='hover'
+            animate='initial'
           >
             <a href='/'>ABOUT</a>
           </motion.div>
@@ -140,7 +151,9 @@ const Nav = ({ navBarOpen, setNavbarOpen }) => {
           <motion.div
             className='hover:bg-gray-800 hover:text-green-400 py-4 transition ease-in'
             variants={hoverVariants}
+            initial='initial'
             whileHover='hover'
+            animate='initial'
           >
             <a href='/'>CONTACT</a>
           </motion.div>

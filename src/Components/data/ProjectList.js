@@ -46,7 +46,7 @@ const ProjectList = [
   },
   {
     id: '4',
-    name: 'Korea Times',
+    name: 'Korea Times Chicago',
     technologies: ['HTML', 'CSS', 'JavaScript', 'WordPress'],
     description:
       'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta quisquam quae ullam labore ipsa, officiis possimus debitis laborum velit repellat laudantium minus, perspiciatis esse consectetur sit dolores aperiam. Molestiae, odio.',

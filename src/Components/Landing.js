@@ -1,5 +1,32 @@
 import React from 'react';
 import Particles from 'react-tsparticles';
+import { motion } from 'framer-motion';
+
+const buttonMotion = {
+  initial: {
+    scale: 1,
+  },
+  hover: {
+    scale: 1.2,
+    transition: {
+      duration: 0.5,
+      ease: 'easeInOut',
+    },
+  },
+};
+
+const btnBarMotion = {
+  initial: {
+    width: '0%',
+  },
+  hover: {
+    width: '100%',
+    transition: {
+      duration: 0.6,
+      ease: 'linear',
+    },
+  },
+};
 
 const Landing = () => {
   return (
@@ -120,18 +147,38 @@ const Landing = () => {
           </h1>
         </div>
         <div className='inline-block flex flex-wrap justify-center lg:justify-start text-md lg:text-2xl font-semibold tracking-wider'>
-          <a
+          <motion.a
             href='/'
-            className='px-6 lg:px-8 py-2 lg:py-3 border border-white  lg:ml-4 hover:bg-green-500 hover:text-white hover:border-green-500 hover:bg-opacity-80 transition ease-in'
+            className='relative px-6 lg:px-8 py-2 lg:py-3 border border-white  lg:ml-4 hover:border-green-500 hover:bg-opacity-80 transition ease-in'
+            initial='initial'
+            whileHover='hover'
+            animate='initial'
           >
-            Resume
-          </a>
-          <a
+            <motion.p className='z-10 relative' variants={buttonMotion}>
+              Resume
+            </motion.p>
+            <motion.div
+              className='inset-0 absolute bg-green-500 
+            bg-opacity-80'
+              variants={btnBarMotion}
+            />
+          </motion.a>
+          <motion.a
             href='/'
-            className='px-6 lg:px-8 py-2 lg:py-3 border border-white  ml-6 hover:bg-pink-500 hover:text-white hover:border-pink-500 hover:bg-opacity-80 transition ease-in'
+            className='relative px-6 lg:px-8 py-2 lg:py-3 border border-white  ml-6 hover:border-pink-500 hover:bg-opacity-80 transition ease-in'
+            initial='initial'
+            whileHover='hover'
+            animate='initial'
           >
-            Contact
-          </a>
+            <motion.p className='z-10 relative' variants={buttonMotion}>
+              Contact
+            </motion.p>
+            <motion.div
+              className='inset-0 absolute bg-pink-500 
+            bg-opacity-80'
+              variants={btnBarMotion}
+            />
+          </motion.a>
         </div>
       </div>
       <div className='absolute block inset-x-0 bottom-0'>

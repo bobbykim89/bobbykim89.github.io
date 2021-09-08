@@ -8,17 +8,39 @@ const motionVariants = {
     scale: 1,
     x: 0,
   },
-  hidden: {
+  hover: {
+    scale: 1.1,
+    originX: 0,
+    transition: {
+      duration: 0.5,
+      ease: 'easeInOut',
+    },
+  },
+};
+
+const barVariants = {
+  initial: {
     width: '0%',
   },
   hover: {
     width: '100%',
-  },
-  btnHover: {
-    scale: 1.1,
-    x: '15px',
     transition: {
-      duration: 0.5,
+      duration: 0.6,
+      ease: 'linear',
+    },
+  },
+};
+
+const buttonMotion = {
+  initial: {
+    scale: 1,
+  },
+  hover: {
+    scale: 1.2,
+    transition: {
+      scale: {
+        duration: 0.5,
+      },
     },
   },
 };
@@ -26,7 +48,6 @@ const motionVariants = {
 const SingleProject = () => {
   const { id } = useParams();
   const project = ProjectList.filter((item) => item.id === id)[0];
-  console.log(id, project);
   const { name, description, technologies, git, page, image1, image2 } =
     project;
 
@@ -39,17 +60,17 @@ const SingleProject = () => {
         className='relative py-2 px-4 mx-4 border-white border mb-6'
         variants={motionVariants}
         initial='initial'
-        whileHover='btnHover'
+        whileHover='hover'
+        animate='initial'
       >
         <div className='relative z-10'>
-          <i className='fas fa-chevron-left mr-3' /> Go Back to Previous Page
+          <i className='fas fa-chevron-left mr-3' />
+          Back to Previous Page
         </div>
         <motion.div
-          className='absolute inset-0 bg-green-500 bg-opacity-70'
-          variants={motionVariants}
-          initial='hidden'
-          whileHover='hover'
-        ></motion.div>
+          className='absolute inset-0 bg-green-500 bg-opacity-80'
+          variants={barVariants}
+        />
       </motion.button>
       {project && (
         <div>
@@ -77,26 +98,48 @@ const SingleProject = () => {
               <h1 className='text-2xl font-inter mb-4 border-b pb-2'>
                 Technologies
               </h1>
-              {project && technologies.map((tech, i) => <p key={i}>{tech}</p>)}
+              {project &&
+                technologies.map((tech, i) => (
+                  <p className='text-gray-200 text-lg' key={i}>
+                    <i className='fas fa-caret-right' /> {tech}
+                  </p>
+                ))}
             </div>
             <div className='md:col-span-2 p-4 mb-4'>
               <h1 className='text-2xl font-inter mb-4 border-b pb-2'>
                 About this project
               </h1>
-              <p>{description}</p>
+              <p className='text-gray-300'>{description}</p>
               <div className=' my-4 text-center '>
-                <a
-                  href={git}
-                  className='text-4xl inline-block mr-6 align-middle'
-                >
-                  <i className='fab fa-github' />
-                </a>
-                <a
+                {git && (
+                  <motion.a
+                    href={git}
+                    target='_blank'
+                    rel='noreferrer'
+                    className='text-4xl inline-block mr-6 align-middle'
+                    variants={buttonMotion}
+                    initial='initial'
+                    whileHover='hover'
+                  >
+                    <i className='fab fa-github' />
+                  </motion.a>
+                )}
+                <motion.a
                   href={page}
-                  className='inline-block border rounded-full border-white px-4 py-2 align-middle'
+                  target='_blank'
+                  rel='noreferrer'
+                  className='relative inline-block border rounded-full border-white px-4 py-2 align-middle overflow-hidden'
+                  variants={buttonMotion}
+                  initial='initial'
+                  whileHover='hover'
+                  animate='initial'
                 >
-                  Go to page
-                </a>
+                  <motion.div
+                    className='inset-0 absolute bg-pink-500 bg-opacity-80'
+                    variants={barVariants}
+                  />
+                  <span className='relative'>Go to page</span>
+                </motion.a>
               </div>
             </div>
           </div>

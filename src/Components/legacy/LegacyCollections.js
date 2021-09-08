@@ -19,6 +19,11 @@ const LegacyCollections = () => {
         <div className='bg-gray-600 hidden lg:block row-start-4 col-span-2 animate-pulse' />
         <div className='bg-gray-800 row-start-4 col-start-2 lg:col-start-4 col-span-2 animate-pulse animation-3-5' />
       </div>
+      <div>
+        'linear-gradient(to right, #f0f -200%, #0ff -100%, #f0f 0%, #0ff 100%)',
+        'linear-gradient(to right, #f0f -100%, #0ff 0%, #f0f 100%, #0ff 200%)',
+        'linear-gradient(to right, #f0f 0%, #0ff 100%, #f0f 200%, #0ff 300%)',
+      </div>
     </div>
   );
 };
