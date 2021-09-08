@@ -28,6 +28,8 @@ Mango Planner\
 Nadia Flores Portfolio\
 Koreatimes Chicago
 
+\*\*Should add this portfolio inside the project as well
+
 \*\* Need to think if I should add tutorial projects
 
 ### `Contacts`
@@ -38,8 +40,9 @@ Tailwind CSS\
 autoprefixer\
 postcss\
 Hamburger-react\
-react-router-dom ?\
-React-helmet-async
+react-router-dom\
+React-helmet-async\
+framer-motion
 
 ### Dev Dependencies
 
