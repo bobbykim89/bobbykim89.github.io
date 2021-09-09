@@ -40,11 +40,11 @@ const Landing = () => {
           },
           particles: {
             number: {
-              value: 100,
-              limit: 150,
+              value: 1000,
+              limit: 1200,
               density: {
                 enable: true,
-                value_area: 400,
+                value_area: 1500,
               },
             },
             color: {
@@ -64,7 +64,7 @@ const Landing = () => {
               },
             },
             size: {
-              value: 5,
+              value: 0.2,
               random: true,
               anim: {
                 enable: true,
