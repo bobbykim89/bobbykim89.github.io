@@ -8,7 +8,7 @@ const Projects = () => {
       id='projects'
       className='font-inter bg-gray-800 font-montserrat text-white pt-20'
     >
-      <h1 className='text-3xl md:text-5xl text-center md:text-left md:ml-12  font-bold font-inter tracking-wider mb-8'>
+      <h1 className='text-4xl md:text-5xl text-center md:text-left md:ml-12  font-bold font-inter tracking-wider mb-8'>
         <i className='fas fa-code' /> PROJECTS
       </h1>
       <div className='text-lg text-justify md:text-left md:ml-12 text-gray-200 mb-8 w-11/12 md:w-1/2 mx-auto md:mx-0'>

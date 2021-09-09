@@ -8,6 +8,7 @@ import Nav from './Components/Nav';
 import Projects from './Components/Projects';
 import About from './Components/About';
 import SingleProject from './Components/layouts/SingleProject';
+import Contact from './Components/Contact';
 
 function App() {
   const [navBarOpen, setNavbarOpen] = useState(false);
@@ -25,6 +26,7 @@ function App() {
                 <Landing />
                 <Projects />
                 <About />
+                <Contact />
               </Route>
               <Route path='/projects/:id' component={SingleProject} />
 
