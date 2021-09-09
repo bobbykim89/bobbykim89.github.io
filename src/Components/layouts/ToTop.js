@@ -19,12 +19,12 @@ const ToTop = () => {
   return (
     <div
       className={
-        'fixed bg-gray-200 bg-opacity-70 rounded-lg bottom-0 right-0 mb-4 mr-4 transition ease-in duration-400 delay-150' +
+        'fixed bg-gray-200 bg-opacity-70 rounded-lg bottom-0 right-0 mb-4 mr-4 transition ease-in duration-400 delay-150 hover:text-[#00feda]' +
         (topScroll ? ' block' : ' hidden')
       }
       onClick={toTop}
     >
-      <span className='material-icons mx-2 mt-2 cursor-pointer'>
+      <span className='material-icons mx-2 mt-2  cursor-pointer'>
         expand_less
       </span>
     </div>

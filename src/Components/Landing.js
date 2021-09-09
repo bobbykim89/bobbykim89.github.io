@@ -120,7 +120,7 @@ const Landing = () => {
                 duration: 2,
                 speed: 2,
                 color: {
-                  value: ['#ec4899', '#10b981'],
+                  value: ['#ec4899', '#00feda'],
                 },
               },
               repulse: {
@@ -142,7 +142,7 @@ const Landing = () => {
       <div className='relative inline-block mx-auto mt-60 ml-8 lg:ml-20'>
         <div className='inline mb-2 lg:mb-6'>
           <h1 className='text-3xl lg:text-6xl font-bold lg:tracking-wider leading-normal mb-4'>
-            Hi, this is <span className='text-green-500'>Bobby</span>!
+            Hi, this is <span className='text-[#00feda]'>Bobby</span>!
             <br />I am a <span className='text-pink-600'>web</span> Developer
           </h1>
         </div>
@@ -158,7 +158,7 @@ const Landing = () => {
               Resume
             </motion.p>
             <motion.div
-              className='inset-0 absolute bg-green-500 
+              className='inset-0 absolute bg-[#00feda] 
             bg-opacity-80'
               variants={btnBarMotion}
             />

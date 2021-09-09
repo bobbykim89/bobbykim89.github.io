@@ -42,7 +42,8 @@ postcss\
 Hamburger-react\
 react-router-dom\
 React-helmet-async\
-framer-motion
+framer-motion\
+emailjs-com
 
 ### Dev Dependencies
 

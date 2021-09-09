@@ -7,10 +7,14 @@ const motionVariants = {
   initial: {
     scale: 1,
     x: 0,
+    color: '#fff',
+    borderColor: '#fff',
   },
   hover: {
     scale: 1.1,
     originX: 0,
+    color: '#000000',
+    borderColor: '#00feda',
     transition: {
       duration: 0.5,
       ease: 'easeInOut',
@@ -40,6 +44,24 @@ const buttonMotion = {
     transition: {
       scale: {
         duration: 0.5,
+        ease: 'easeInOut',
+      },
+    },
+  },
+};
+
+const gitMotion = {
+  initial: {
+    scale: 1,
+    color: '#fff',
+  },
+  hover: {
+    scale: 1.2,
+    color: '#00feda',
+    transition: {
+      scale: {
+        duration: 0.5,
+        ease: 'easeInOut',
       },
     },
   },
@@ -57,7 +79,7 @@ const SingleProject = () => {
     <section className='bg-gray-800 w-screen md:w-full text-white font-montserrat py-20'>
       <motion.button
         onClick={() => history.goBack()}
-        className='relative py-2 px-4 mx-4 border-white border mb-6'
+        className='relative py-2 px-4 mx-4 border mb-6'
         variants={motionVariants}
         initial='initial'
         whileHover='hover'
@@ -68,7 +90,7 @@ const SingleProject = () => {
           Back to Previous Page
         </div>
         <motion.div
-          className='absolute inset-0 bg-green-500 bg-opacity-80'
+          className='absolute inset-0 bg-[#00feda] bg-opacity-80'
           variants={barVariants}
         />
       </motion.button>
@@ -117,7 +139,7 @@ const SingleProject = () => {
                     target='_blank'
                     rel='noreferrer'
                     className='text-4xl inline-block mr-6 align-middle'
-                    variants={buttonMotion}
+                    variants={gitMotion}
                     initial='initial'
                     whileHover='hover'
                   >

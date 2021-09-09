@@ -99,6 +99,20 @@ const hoverVariants = {
   },
 };
 
+const logoMotion = {
+  initial: {
+    backgroundColor: '#fff',
+  },
+  animate: {
+    backgroundColor: ['#fff', '#00feda', '#ec4899', '#00feda', '#fff'],
+    transition: {
+      duration: 2,
+      ease: 'linear',
+      repeat: Infinity,
+    },
+  },
+};
+
 const Nav = ({ navBarOpen, setNavbarOpen }) => {
   // const [navBarOpen, setNavbarOpen] = useState(false);
   return (
@@ -112,10 +126,13 @@ const Nav = ({ navBarOpen, setNavbarOpen }) => {
         >
           <div className='text-center'>
             <a href='/' className='inline-block mb-4 align-middle'>
-              <img
+              <motion.img
                 src={logo2}
                 alt='logo'
-                className='mx-auto w-1/2 bg-white p-2 rounded-full'
+                className='mx-auto w-1/2 p-2 rounded-full'
+                variants={logoMotion}
+                initial='initial'
+                animate='animate'
               />
             </a>
             <h1 className='text-2xl font-semibold align-middle py-2 mx-auto'>
@@ -130,7 +147,7 @@ const Nav = ({ navBarOpen, setNavbarOpen }) => {
           animate='menuInMd'
         >
           <motion.div
-            className='hover:bg-gray-800 hover:text-green-400 py-4 transition ease-in'
+            className='hover:bg-gray-800 hover:text-[#00feda] py-4 transition ease-in'
             variants={hoverVariants}
             initial='initial'
             whileHover='hover'
@@ -139,7 +156,7 @@ const Nav = ({ navBarOpen, setNavbarOpen }) => {
             <a href='/#projects'>PROJECTS</a>
           </motion.div>
           <motion.div
-            className='hover:bg-gray-800 hover:text-green-400 py-4 transition ease-in'
+            className='hover:bg-gray-800 hover:text-[#00feda] py-4 transition ease-in'
             variants={hoverVariants}
             initial='initial'
             whileHover='hover'
@@ -149,7 +166,7 @@ const Nav = ({ navBarOpen, setNavbarOpen }) => {
           </motion.div>
 
           <motion.div
-            className='hover:bg-gray-800 hover:text-green-400 py-4 transition ease-in'
+            className='hover:bg-gray-800 hover:text-[#00feda] py-4 transition ease-in'
             variants={hoverVariants}
             initial='initial'
             whileHover='hover'
@@ -169,7 +186,7 @@ const Nav = ({ navBarOpen, setNavbarOpen }) => {
               href='https://github.com/bobbykim89'
               target='_blank'
               rel='noreferrer'
-              className='inline-block text-white mr-4 hover:text-green-400'
+              className='inline-block text-white mr-4 hover:text-[#00feda]'
             >
               <i className='fab fa-github-square' />
             </a>
@@ -177,7 +194,7 @@ const Nav = ({ navBarOpen, setNavbarOpen }) => {
               href='https://www.linkedin.com/in/bobby-kim-9baa17165/'
               target='_blank'
               rel='noreferrer'
-              className='inline-block text-white mr-4 hover:text-green-400'
+              className='inline-block text-white mr-4 hover:text-[#00feda]'
             >
               <i className='fab fa-linkedin' />
             </a>
@@ -185,7 +202,7 @@ const Nav = ({ navBarOpen, setNavbarOpen }) => {
               href='mailto:bobby.sihun.kim@gmail.com'
               target='_blank'
               rel='noreferrer'
-              className='inline-block text-white hover:text-green-400'
+              className='inline-block text-white hover:text-[#00feda]'
             >
               <i className='fas fa-envelope' />
             </a>
@@ -215,10 +232,13 @@ const Nav = ({ navBarOpen, setNavbarOpen }) => {
         >
           <div className='text-center'>
             <a href='/' className='inline-block mb-4 align-middle '>
-              <img
+              <motion.img
                 src={logo2}
                 alt='logo'
-                className='mx-auto w-1/2 bg-white p-2 rounded-full'
+                className='mx-auto w-1/2 p-2 rounded-full'
+                variants={logoMotion}
+                initial='initial'
+                animate='animate'
               />
             </a>
             <h1 className='text-2xl font-semibold align-middle py-2 mx-auto'>
@@ -232,14 +252,14 @@ const Nav = ({ navBarOpen, setNavbarOpen }) => {
           initial='menuIni'
           animate={navBarOpen ? 'menuIn' : 'menuOut'}
         >
-          <div className='hover:bg-gray-800 hover:text-green-400 py-4 transition ease-in'>
+          <div className='hover:bg-gray-800 hover:text-[#00feda] py-4 transition ease-in'>
             <a href='/'>PROJECTS</a>
           </div>
-          <div className='hover:bg-gray-800 hover:text-green-400 py-4 transition ease-in'>
+          <div className='hover:bg-gray-800 hover:text-[#00feda] py-4 transition ease-in'>
             <a href='/'>ABOUT</a>
           </div>
 
-          <div className='hover:bg-gray-800 hover:text-green-400 py-4 transition ease-in'>
+          <div className='hover:bg-gray-800 hover:text-[#00feda] py-4 transition ease-in'>
             <a href='/'>CONTACT</a>
           </div>
         </motion.div>
@@ -254,7 +274,7 @@ const Nav = ({ navBarOpen, setNavbarOpen }) => {
               href='https://github.com/bobbykim89'
               target='_blank'
               rel='noreferrer'
-              className='inline-block text-white mr-4 hover:text-green-400'
+              className='inline-block text-white mr-4 hover:text-[#00feda]'
             >
               <i className='fab fa-github-square' />
             </a>
@@ -262,7 +282,7 @@ const Nav = ({ navBarOpen, setNavbarOpen }) => {
               href='https://www.linkedin.com/in/bobby-kim-9baa17165/'
               target='_blank'
               rel='noreferrer'
-              className='inline-block text-white mr-4 hover:text-green-400'
+              className='inline-block text-white mr-4 hover:text-[#00feda]'
             >
               <i className='fab fa-linkedin' />
             </a>
@@ -270,7 +290,7 @@ const Nav = ({ navBarOpen, setNavbarOpen }) => {
               href='mailto:bobby.sihun.kim@gmail.com'
               target='_blank'
               rel='noreferrer'
-              className='inline-block text-white hover:text-green-400'
+              className='inline-block text-white hover:text-[#00feda]'
             >
               <i className='fas fa-envelope' />
             </a>
