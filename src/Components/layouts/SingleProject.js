@@ -153,18 +153,22 @@ const SingleProject = () => {
                 <h1 className='text-2xl font-inter mb-4 border-b pb-2'>
                   Technologies
                 </h1>
-                {project &&
-                  technologies.map((tech, i) => (
-                    <p className='text-gray-200 text-lg' key={i}>
-                      <i className='fas fa-caret-right' /> {tech}
-                    </p>
-                  ))}
+                <div className='ml-3'>
+                  {project &&
+                    technologies.map((tech, i) => (
+                      <p className='text-gray-200 text-lg' key={i}>
+                        <i className='fas fa-caret-right' /> {tech}
+                      </p>
+                    ))}
+                </div>
               </div>
               <div className='md:col-span-2 p-4 mb-4'>
                 <h1 className='text-2xl font-inter mb-4 border-b pb-2'>
                   About this project
                 </h1>
-                <p className='text-gray-300'>{description}</p>
+                <p className='text-gray-300 whitespace-pre-line'>
+                  {description}
+                </p>
                 <div className=' my-4 text-center '>
                   {git && (
                     <motion.a

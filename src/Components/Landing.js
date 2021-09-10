@@ -157,7 +157,9 @@ const Landing = () => {
         </div>
         <div className='inline-block flex flex-wrap justify-center lg:justify-start text-md lg:text-2xl tracking-wider'>
           <motion.a
-            href='/'
+            href='https://drive.google.com/file/d/1BFqAufQaxf9PGZCLVq8swfsNU4x4A6n2/view?usp=sharing'
+            target='_blank'
+            rel='noreferrer'
             className='relative px-6 lg:px-8 py-2 lg:py-3 border border-white  lg:ml-4 hover:border-green-500 hover:bg-opacity-80 transition ease-in'
             initial='initial'
             whileHover='hover'
