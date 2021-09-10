@@ -13,10 +13,9 @@ const Projects = () => {
       </h1>
       <div className='text-lg text-justify md:text-left md:ml-12 text-gray-200 mb-8 w-11/12 md:w-1/2 mx-auto md:mx-0'>
         <span>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
-          enim cupiditate! In, eos? Excepturi voluptates assumenda veritatis
-          illum, numquam nostrum sequi incidunt temporibus? Veniam debitis eaque
-          sapiente sit cumque repellat.
+          Here is gallery of my personal projects and works. You can hover mouse
+          cursor over and click on view project, then it will take you right to
+          project details page. Hope you enjoy it!
         </span>
       </div>
       <div className='grid grid-flow-row md:grid-cols-4 mb-20'>

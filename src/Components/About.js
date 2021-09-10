@@ -103,10 +103,12 @@ const About = () => {
           />
           <div className='text-lg text-justify md:text-left text-gray-200 mb-8 w-11/12 mx-auto'>
             <span>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Explicabo, enim cupiditate! In, eos? Excepturi voluptates
-              assumenda veritatis illum, numquam nostrum sequi incidunt
-              temporibus? Veniam debitis eaque sapiente sit cumque repellat.
+              Hello! This is Bobby, I am a self taught web developer. I worked
+              in the Korea Times Chicago as web administrator/IT technician for
+              3 years and currently relocated to Chandler, AZ and I've been
+              continuously learning and freelancing since then. I graduated from
+              Purdue University with Bachelor of science in Industrial
+              engineering at 2018
             </span>
             <div className=' my-4 text-center '>
               <motion.a

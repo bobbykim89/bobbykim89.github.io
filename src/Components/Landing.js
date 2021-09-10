@@ -9,7 +9,7 @@ const buttonMotion = {
     color: '#fff',
   },
   hover: {
-    scale: 1.2,
+    scale: 1.1,
     color: '#000000',
     transition: {
       duration: 0.5,
@@ -155,7 +155,7 @@ const Landing = () => {
             <br />I am a <span className='text-pink-600'>web</span> Developer
           </h1>
         </div>
-        <div className='inline-block flex flex-wrap justify-center lg:justify-start text-md lg:text-2xl font-semibold tracking-wider'>
+        <div className='inline-block flex flex-wrap justify-center lg:justify-start text-md lg:text-2xl tracking-wider'>
           <motion.a
             href='/'
             className='relative px-6 lg:px-8 py-2 lg:py-3 border border-white  lg:ml-4 hover:border-green-500 hover:bg-opacity-80 transition ease-in'
@@ -173,7 +173,7 @@ const Landing = () => {
             />
           </motion.a>
           <motion.a
-            href='/'
+            href='/#contact'
             className='relative px-6 lg:px-8 py-2 lg:py-3 border border-white  ml-6 hover:border-pink-500 hover:bg-opacity-80 transition ease-in'
             initial='initial'
             whileHover='hover'
@@ -193,7 +193,7 @@ const Landing = () => {
       <div className='absolute block inset-x-0 bottom-0'>
         <a href='#projects'>
           <div className='mb-6 flex justify-center relative animate-bounce text-white cursor-pointer'>
-            <i className='block material-icons text-2xl px-2 py-2 border border-gray-400 rounded-full '>
+            <i className='block material-icons text-2xl px-2 py-2 border border-gray-400 rounded-full hover:text-[#00feda] hover:border-[#00feda]'>
               expand_more
             </i>
           </div>

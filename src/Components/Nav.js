@@ -38,7 +38,7 @@ const menuVariants = {
     transition: {
       delay: 0.3,
       type: 'spring',
-      mass: 1,
+      mass: 0.6,
       damping: 10,
     },
   },
@@ -208,9 +208,7 @@ const Nav = ({ navBarOpen, setNavbarOpen }) => {
               <i className='fab fa-linkedin' />
             </a>
             <a
-              href='mailto:bobby.sihun.kim@gmail.com'
-              target='_blank'
-              rel='noreferrer'
+              href='/#contact'
               className='inline-block text-white hover:text-[#00feda]'
             >
               <i className='fas fa-envelope' />
@@ -295,6 +293,7 @@ const Nav = ({ navBarOpen, setNavbarOpen }) => {
               target='_blank'
               rel='noreferrer'
               className='inline-block text-white mr-4 hover:text-[#00feda]'
+              onClick={() => setNavbarOpen(false)}
             >
               <i className='fab fa-github-square' />
             </a>
@@ -303,14 +302,14 @@ const Nav = ({ navBarOpen, setNavbarOpen }) => {
               target='_blank'
               rel='noreferrer'
               className='inline-block text-white mr-4 hover:text-[#00feda]'
+              onClick={() => setNavbarOpen(false)}
             >
               <i className='fab fa-linkedin' />
             </a>
             <a
-              href='mailto:bobby.sihun.kim@gmail.com'
-              target='_blank'
-              rel='noreferrer'
+              href='/#contact'
               className='inline-block text-white hover:text-[#00feda]'
+              onClick={() => setNavbarOpen(false)}
             >
               <i className='fas fa-envelope' />
             </a>

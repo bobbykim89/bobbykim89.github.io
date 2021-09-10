@@ -1219,6 +1219,11 @@ video {
 	border-color: rgba(236, 72, 153, var(--tw-border-opacity));
 }
 
+.hover\:border-\[\#00feda\]:hover {
+	--tw-border-opacity: 1;
+	border-color: rgba(0, 254, 218, var(--tw-border-opacity));
+}
+
 .hover\:bg-gray-800:hover {
 	--tw-bg-opacity: 1;
 	background-color: rgba(31, 41, 55, var(--tw-bg-opacity));
