@@ -24,6 +24,114 @@ const LegacyCollections = () => {
         'linear-gradient(to right, #f0f -100%, #0ff 0%, #f0f 100%, #0ff 200%)',
         'linear-gradient(to right, #f0f 0%, #0ff 100%, #f0f 200%, #0ff 300%)',
       </div>
+      {/* Bouncy particles setting */}
+      <Particles
+        className='absolute inset-0 bg-gray-800'
+        options={{
+          fullScreen: {
+            enable: false,
+            zIndex: 0,
+          },
+          particles: {
+            number: {
+              value: 1000,
+              limit: 1200,
+              density: {
+                enable: true,
+                value_area: 1500,
+              },
+            },
+            color: {
+              value: '#ffffff',
+            },
+            shape: {
+              type: 'circle',
+            },
+            opacity: {
+              value: 0.3,
+              random: true,
+              anim: {
+                enable: true,
+                speed: 1,
+                opacity_min: 0.3,
+                sync: false,
+              },
+            },
+            size: {
+              value: 0.2,
+              random: true,
+              anim: {
+                enable: true,
+                speed: 10,
+                size_min: 10,
+                sync: false,
+              },
+            },
+            move: {
+              enable: true,
+              speed: 3,
+              direction: 'none',
+              random: false,
+              straight: false,
+              out_mode: 'out',
+              bounce: false,
+              attract: {
+                enable: false,
+                rotateX: 600,
+                rotateY: 1200,
+              },
+            },
+          },
+          interactivity: {
+            detect_on: 'canvas',
+            events: {
+              onHover: {
+                enable: true,
+                mode: 'bubble',
+                parallax: {
+                  enable: true,
+                  force: 60,
+                  smooth: 10,
+                },
+              },
+              onClick: {
+                enable: true,
+                mode: 'push',
+              },
+              resize: true,
+            },
+            modes: {
+              grab: {
+                distance: 400,
+                lineLinked: {
+                  opacity: 1,
+                },
+              },
+              bubble: {
+                size: 10,
+                opacity: 1,
+                distance: 300,
+                duration: 2,
+                speed: 2,
+                color: {
+                  value: ['#ec4899', '#00feda'],
+                },
+              },
+              repulse: {
+                distance: 200,
+              },
+              push: {
+                particles_nb: 4,
+              },
+              remove: {
+                particles_nb: 2,
+              },
+            },
+          },
+          retina_detect: true,
+          fps_limit: 60,
+        }}
+      />
     </div>
   );
 };

@@ -3,6 +3,28 @@ import { useHistory, useParams } from 'react-router-dom';
 import ProjectList from '../data/ProjectList';
 import { motion } from 'framer-motion';
 
+const containerMotion = {
+  initial: {
+    x: '-100vw',
+    opacity: 0,
+  },
+  animate: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      type: 'spring',
+      mass: '0.5',
+      damping: 8,
+      delay: 0.5,
+      when: 'beforeChildren',
+    },
+  },
+  exit: {
+    x: '-100vw',
+    transition: { ease: 'easeInOut' },
+  },
+};
+
 const motionVariants = {
   initial: {
     scale: 1,
@@ -76,7 +98,13 @@ const SingleProject = () => {
   const history = useHistory();
 
   return (
-    <section className='bg-gray-800 w-screen md:w-full text-white font-montserrat py-20'>
+    <motion.section
+      className='bg-gray-800 w-screen md:w-full text-white font-montserrat py-20'
+      variants={containerMotion}
+      initial='initial'
+      animate='animate'
+      exit='exit'
+    >
       <motion.button
         onClick={() => history.goBack()}
         className='relative py-2 px-4 mx-4 border mb-6'
@@ -167,7 +195,7 @@ const SingleProject = () => {
           </div>
         </div>
       )}
-    </section>
+    </motion.section>
   );
 };
 

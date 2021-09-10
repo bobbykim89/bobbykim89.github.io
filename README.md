@@ -16,9 +16,9 @@ Brief introduction about myself
 
 ### `Skills`
 
-Frontend - HTML/CSS/JS, React, VueJS, Tailwind CSS, TypeScript
-Backend - Express, NodeJS, GraphQL
-Platform - Windows, Linux(Debian), Mac, Wordpress, Strapi
+Frontend - HTML/CSS/JS, React, VueJS, Tailwind CSS, TypeScript\
+Backend - Express, NodeJS, GraphQL\
+Platform - Windows, Linux(Debian), Mac, Wordpress, Strapi\
 Design Tools - inDesign, Photoshop, Illustrator
 
 ### `Projects`
@@ -43,7 +43,8 @@ Hamburger-react\
 react-router-dom\
 React-helmet-async\
 framer-motion\
-emailjs-com
+emailjs-com\
+ts-particles
 
 ### Dev Dependencies
 

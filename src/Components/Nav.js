@@ -153,6 +153,15 @@ const Nav = ({ navBarOpen, setNavbarOpen }) => {
             whileHover='hover'
             animate='initial'
           >
+            <a href='/'>HOME</a>
+          </motion.div>
+          <motion.div
+            className='hover:bg-gray-800 hover:text-[#00feda] py-4 transition ease-in'
+            variants={hoverVariants}
+            initial='initial'
+            whileHover='hover'
+            animate='initial'
+          >
             <a href='/#projects'>PROJECTS</a>
           </motion.div>
           <motion.div
@@ -162,7 +171,7 @@ const Nav = ({ navBarOpen, setNavbarOpen }) => {
             whileHover='hover'
             animate='initial'
           >
-            <a href='/'>ABOUT</a>
+            <a href='/#about'>ABOUT</a>
           </motion.div>
 
           <motion.div
@@ -172,7 +181,7 @@ const Nav = ({ navBarOpen, setNavbarOpen }) => {
             whileHover='hover'
             animate='initial'
           >
-            <a href='/'>CONTACT</a>
+            <a href='/#contact'>CONTACT</a>
           </motion.div>
         </motion.div>
         <motion.div
@@ -253,14 +262,25 @@ const Nav = ({ navBarOpen, setNavbarOpen }) => {
           animate={navBarOpen ? 'menuIn' : 'menuOut'}
         >
           <div className='hover:bg-gray-800 hover:text-[#00feda] py-4 transition ease-in'>
-            <a href='/'>PROJECTS</a>
+            <a href='/' onClick={() => setNavbarOpen(false)}>
+              HOME
+            </a>
           </div>
           <div className='hover:bg-gray-800 hover:text-[#00feda] py-4 transition ease-in'>
-            <a href='/'>ABOUT</a>
+            <a href='/#projects' onClick={() => setNavbarOpen(false)}>
+              PROJECTS
+            </a>
+          </div>
+          <div className='hover:bg-gray-800 hover:text-[#00feda] py-4 transition ease-in'>
+            <a href='/#about' onClick={() => setNavbarOpen(false)}>
+              ABOUT
+            </a>
           </div>
 
           <div className='hover:bg-gray-800 hover:text-[#00feda] py-4 transition ease-in'>
-            <a href='/'>CONTACT</a>
+            <a href='/#contact' onClick={() => setNavbarOpen(false)}>
+              CONTACT
+            </a>
           </div>
         </motion.div>
         <motion.div

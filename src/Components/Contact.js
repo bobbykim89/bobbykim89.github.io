@@ -77,7 +77,7 @@ const Contact = () => {
         </svg>
       </div>
       <div
-        className='absolute w-full h-full top-0 content-center bg-scroll bg-top bg-cover'
+        className='absolute w-full h-full top-0 content-center bg-fixed bg-top bg-cover'
         style={{ backgroundImage: `url(${landing})` }}
       >
         <span className='w-full h-full absolute opacity-80 bg-black' />

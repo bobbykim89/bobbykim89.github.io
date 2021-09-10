@@ -83,7 +83,10 @@ const iconMotion = {
 
 const About = () => {
   return (
-    <section className='bg-gray-700 font-montserrat text-white pt-20'>
+    <section
+      id='about'
+      className='bg-gray-700 font-montserrat text-white pt-20'
+    >
       <h1 className='text-4xl lg:text-5xl text-center md:text-left lg:ml-12  font-bold font-inter tracking-wider mb-8'>
         <i className='fas fa-question-circle' /> ABOUT
       </h1>
@@ -288,7 +291,7 @@ const About = () => {
               className='mb-4 pb-2 text-xl text-gray-100 border-b'
               variants={techText}
             >
-              Graphic Tools
+              Design Tools
             </motion.h3>
             <div className='flex justify-center'>
               <motion.img

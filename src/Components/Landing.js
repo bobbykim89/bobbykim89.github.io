@@ -1,13 +1,16 @@
 import React from 'react';
 import Particles from 'react-tsparticles';
 import { motion } from 'framer-motion';
+import landing from './img/landing2.jpg';
 
 const buttonMotion = {
   initial: {
     scale: 1,
+    color: '#fff',
   },
   hover: {
     scale: 1.2,
+    color: '#000000',
     transition: {
       duration: 0.5,
       ease: 'easeInOut',
@@ -30,9 +33,15 @@ const btnBarMotion = {
 
 const Landing = () => {
   return (
-    <section className='relative min-h-85v text-white font-inter overflow-hidden'>
+    <section className='relative min-h-85v text-white font-inter '>
+      <div
+        className='absolute w-full h-full top-0 bg-fixed bg-bottom bg-cover'
+        style={{
+          backgroundImage: `url(${landing})`,
+        }}
+      />
       <Particles
-        className='absolute inset-0 bg-black bg-opacity-90'
+        className='absolute inset-0 bg-gray-800 opacity-80'
         options={{
           fullScreen: {
             enable: false,
@@ -40,11 +49,11 @@ const Landing = () => {
           },
           particles: {
             number: {
-              value: 1000,
-              limit: 1200,
+              value: 400,
+
               density: {
                 enable: true,
-                value_area: 1500,
+                value_area: 800,
               },
             },
             color: {
@@ -54,7 +63,7 @@ const Landing = () => {
               type: 'circle',
             },
             opacity: {
-              value: 0.3,
+              value: 0.4,
               random: true,
               anim: {
                 enable: true,
@@ -64,7 +73,7 @@ const Landing = () => {
               },
             },
             size: {
-              value: 0.2,
+              value: 10,
               random: true,
               anim: {
                 enable: true,
@@ -76,7 +85,7 @@ const Landing = () => {
             move: {
               enable: true,
               speed: 3,
-              direction: 'none',
+              direction: 'bottom',
               random: false,
               straight: false,
               out_mode: 'out',
