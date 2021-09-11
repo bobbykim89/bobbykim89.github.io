@@ -124,7 +124,7 @@ const Nav = ({ navBarOpen, setNavbarOpen }) => {
           animate='logoIn'
         >
           <div className='text-center'>
-            <a href='/' className='inline-block mb-4 align-middle'>
+            <a href='/#landing' className='inline-block mb-4 align-middle'>
               <motion.img
                 src={logo2}
                 alt='logo'
@@ -152,7 +152,7 @@ const Nav = ({ navBarOpen, setNavbarOpen }) => {
             whileHover='hover'
             animate='initial'
           >
-            <a href='/'>HOME</a>
+            <a href='/#landing'>HOME</a>
           </motion.div>
           <motion.div
             className='hover:bg-gray-800 hover:text-[#00feda] py-4 transition ease-in'
@@ -237,7 +237,7 @@ const Nav = ({ navBarOpen, setNavbarOpen }) => {
           animate={navBarOpen ? 'logoIn' : 'logoOut'}
         >
           <div className='text-center'>
-            <a href='/' className='inline-block mb-4 align-middle '>
+            <a href='/#landing' className='inline-block mb-4 align-middle '>
               <motion.img
                 src={logo2}
                 alt='logo'
@@ -259,7 +259,7 @@ const Nav = ({ navBarOpen, setNavbarOpen }) => {
           animate={navBarOpen ? 'menuIn' : 'menuOut'}
         >
           <div className='hover:bg-gray-800 hover:text-[#00feda] py-4 transition ease-in'>
-            <a href='/' onClick={() => setNavbarOpen(false)}>
+            <a href='/#landing' onClick={() => setNavbarOpen(false)}>
               HOME
             </a>
           </div>

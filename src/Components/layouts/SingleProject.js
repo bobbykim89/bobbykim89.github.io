@@ -1,5 +1,6 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useEffect } from 'react';
 import { useHistory, useParams } from 'react-router-dom';
+import { useLocation } from 'react-router';
 import { motion } from 'framer-motion';
 import { Helmet } from 'react-helmet-async';
 import ProjectList from '../data/ProjectList';
@@ -82,6 +83,12 @@ const SingleProject = () => {
     project;
 
   const history = useHistory();
+
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scroll({ top: 0, left: 0, behavior: 'smooth' });
+  }, [location]);
 
   return (
     <Fragment>

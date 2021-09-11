@@ -10,8 +10,6 @@ import SingleProject from './Components/layouts/SingleProject';
 import NotFound from './Components/layouts/NotFound';
 import Home from './Components/layouts/Home';
 
-import ScrollToTop from './Components/util/ScrollToTop';
-
 function App() {
   const [navBarOpen, setNavbarOpen] = useState(false);
 
@@ -27,20 +25,17 @@ function App() {
         </Helmet>
         <Router>
           <div className='md:flex bg-gray-900'>
-            <ScrollToTop>
-              <Nav navBarOpen={navBarOpen} setNavbarOpen={setNavbarOpen} />
-
-              <AnimatePresence exitBeforeEnter>
-                <div className='w-full'>
-                  <Switch>
-                    <Route exact path='/' component={Home} />
-                    <Route path='/projects/:id' component={SingleProject} />
-                    <Route path='*' component={NotFound} />
-                  </Switch>
-                </div>
-              </AnimatePresence>
-              <ToTop />
-            </ScrollToTop>
+            <Nav navBarOpen={navBarOpen} setNavbarOpen={setNavbarOpen} />
+            <AnimatePresence exitBeforeEnter>
+              <div className='w-full'>
+                <Switch>
+                  <Route exact path='/' component={Home} />
+                  <Route path='/projects/:id' component={SingleProject} />
+                  <Route path='*' component={NotFound} />
+                </Switch>
+              </div>
+            </AnimatePresence>
+            <ToTop />
           </div>
         </Router>
       </HelmetProvider>

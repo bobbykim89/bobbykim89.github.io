@@ -36,7 +36,10 @@ const Landing = () => {
     window.scroll({ top: 750, left: 0, behavior: 'smooth' });
   };
   return (
-    <section className='relative overflow-hidden min-h-85v text-white font-inter '>
+    <section
+      id='landing'
+      className='relative overflow-hidden min-h-85v text-white font-inter '
+    >
       <LandingLogo
         fill='#00feda'
         className='absolute w-1/2 lg:w-1/3 h-52 lg:h-1/2 inline-block top-0 lg:top-[10%] lg:right-[10%] -rotate-45'
@@ -84,11 +87,11 @@ const Landing = () => {
         </div>
       </div>
       <div className='absolute block inset-x-0 bottom-0'>
-        <div
-          className='mb-6 flex justify-center relative animate-bounce text-white cursor-pointer'
-          onClick={toProjects}
-        >
-          <i className='block material-icons text-2xl px-2 py-2 border border-gray-400 rounded-full hover:text-[#00feda] hover:border-[#00feda]'>
+        <div className='mb-6 flex justify-center relative animate-bounce text-white'>
+          <i
+            className='block material-icons text-2xl px-2 py-2 border border-gray-400 rounded-full hover:text-[#00feda] hover:border-[#00feda] cursor-pointer'
+            onClick={toProjects}
+          >
             expand_more
           </i>
         </div>
