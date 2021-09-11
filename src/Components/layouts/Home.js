@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import About from '../About';
 import Contact from '../Contact';
 import Landing from '../Landing';
 import Projects from '../Projects';
+import Popup from './Popup';
 import { motion } from 'framer-motion';
 
 const containerMotion = {
@@ -28,6 +29,14 @@ const containerMotion = {
 };
 
 const Home = () => {
+  const [showPopup, setShowPopup] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setShowPopup(false);
+    }, 4000);
+  }, [showPopup]);
+
   return (
     <motion.section
       variants={containerMotion}
@@ -35,10 +44,11 @@ const Home = () => {
       animate='animate'
       exit='exit'
     >
+      <Popup showPopup={showPopup} />
       <Landing />
       <Projects />
       <About />
-      <Contact />
+      <Contact setShowPopup={setShowPopup} />
     </motion.section>
   );
 };

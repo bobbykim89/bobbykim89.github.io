@@ -58,7 +58,7 @@ const birdMotion = {
   },
   hover: {
     rotate: [0, -90, -180, -270, -360],
-    borderColor: ['#fff', '#f59e0b', '#00feda', '#ec4899'],
+    borderColor: ['#fff', '#00feda', '#fff'],
     transition: {
       duration: 2,
       ease: 'linear',
@@ -101,7 +101,7 @@ const About = ({ intro1, intro2 }) => {
             animate={birdDisco}
             onTap={() => cycleBirdDisco()}
           />
-          <div className='text-[#00ffff] mb-8 w-11/12 mx-auto'>
+          <div className='text-[#00feda] mb-8 w-11/12 mx-auto'>
             <p className='whitespace-pre-line mb-2'>{intro1}</p>
             <p>{intro2}</p>
             <div className=' my-4 text-center '>

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { Fragment, useState } from 'react';
 import './App.css';
 import { AnimatePresence } from 'framer-motion';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
@@ -14,33 +14,37 @@ import ScrollToTop from './Components/util/ScrollToTop';
 
 function App() {
   const [navBarOpen, setNavbarOpen] = useState(false);
+
   return (
-    <AnimatePresence exitBeforeEnter>
-      <div className='md:flex bg-gray-900'>
-        <HelmetProvider>
-          <Helmet>
-            <title>Bobby Kim</title>
-            <meta
-              name='description'
-              content='Hi this is Bobby, aspiring web developer! Thank you for coming!'
-            />
-          </Helmet>
-          <Router>
+    <Fragment>
+      <HelmetProvider>
+        <Helmet>
+          <title>Bobby Kim</title>
+          <meta
+            name='description'
+            content='Hi this is Bobby, aspiring web developer! Thank you for coming!'
+          />
+        </Helmet>
+        <Router>
+          <div className='md:flex bg-gray-900'>
             <ScrollToTop>
               <Nav navBarOpen={navBarOpen} setNavbarOpen={setNavbarOpen} />
-              <div className='w-full'>
-                <Switch>
-                  <Route exact path='/' component={Home} />
-                  <Route path='/projects/:id' component={SingleProject} />
-                  <Route path='*' component={NotFound} />
-                </Switch>
-              </div>
+
+              <AnimatePresence exitBeforeEnter>
+                <div className='w-full'>
+                  <Switch>
+                    <Route exact path='/' component={Home} />
+                    <Route path='/projects/:id' component={SingleProject} />
+                    <Route path='*' component={NotFound} />
+                  </Switch>
+                </div>
+              </AnimatePresence>
               <ToTop />
             </ScrollToTop>
-          </Router>
-        </HelmetProvider>
-      </div>
-    </AnimatePresence>
+          </div>
+        </Router>
+      </HelmetProvider>
+    </Fragment>
   );
 }
 

@@ -19,7 +19,7 @@ const ToTop = () => {
   return (
     <div
       className={
-        'fixed bg-gray-200 bg-opacity-70 rounded-lg bottom-0 right-0 mb-4 mr-4 transition ease-in duration-400 delay-150 hover:text-[#00feda]' +
+        'fixed bg-gray-600 bg-opacity-70 rounded-lg bottom-0 right-0 mb-4 mr-4 transition ease-in duration-400 delay-150 text-white hover:text-[#00feda]' +
         (topScroll ? ' block' : ' hidden')
       }
       onClick={toTop}

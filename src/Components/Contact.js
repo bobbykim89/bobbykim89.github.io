@@ -30,9 +30,10 @@ const btnBarMotion = {
   },
 };
 
-const Contact = () => {
+const Contact = ({ setShowPopup }) => {
   const sendEmail = (e) => {
     e.preventDefault();
+    setShowPopup(true);
 
     emailjs
       .sendForm(
@@ -61,7 +62,7 @@ const Contact = () => {
           <h1 className='relative text-4xl lg:text-5xl text-center md:text-left lg:ml-12 font-inter tracking-wider mb-8'>
             CONTACT
           </h1>
-          <div className='w-11/12 lg:w-5/6 mx-auto p-6 bg-gray-900 bg-opacity-80 rounded-md shadow-lg mb-8'>
+          <div className='lg:w-5/6 mx-auto p-6 bg-gray-900 bg-opacity-80 rounded-md shadow-lg mb-8'>
             <form onSubmit={sendEmail} className='flex flex-col'>
               <label htmlFor='name' className='block text-lg font-semibold'>
                 Name:
@@ -94,7 +95,7 @@ const Contact = () => {
                 cols='30'
                 rows='10'
                 placeholder='Please write your message here'
-                className='block bg-gray-800 outline-none block w-full p-2 shadow bg-gray-800 text-yellow-600  h-48 lg:h-64  mb-4'
+                className='block bg-gray-800 outline-none block w-full p-2 shadow bg-gray-800 h-48 lg:h-64  mb-4'
                 required
               />
               <motion.button
