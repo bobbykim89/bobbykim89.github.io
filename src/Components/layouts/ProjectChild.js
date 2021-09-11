@@ -26,23 +26,23 @@ const projectVariants = {
 const ProjectChild = ({ project }) => {
   const [show, cycleShow] = useCycle('hidden', 'hover');
   return (
-    <div className='relative overflow-hidden aspect-w-1 aspect-h-1'>
+    <div className='relative overflow-hidden aspect-w-1 aspect-h-1 border border-[#00feda]'>
       <motion.div
-        className='z-10 mx-auto pt-10 bg-black bg-opacity-80'
+        className='z-10 mx-auto pt-10 md:pt-4 2xl:pt-10 bg-black bg-opacity-80'
         variants={projectVariants}
         initial='hidden'
         whileHover='hover'
         animate={show}
         onTap={() => cycleShow()}
       >
-        <h1 className='text-center mb-8 text-2xl font-semibold'>
+        <h1 className='text-center mb-8 md:mb-4 2xl:mb-8 text-2xl font-semibold'>
           {project.name}
         </h1>
         <div className='flex flex-wrap justify-center mb-4 mx-3'>
           {project &&
             project.technologies.map((tech, i) => (
               <span
-                className='px-3 py-2 mx-1 bg-gray-700 rounded-lg mb-2 shadow-md cursor-default'
+                className='px-2 py-1 2xl:px-3 2xl:py-2 mx-1 text-base lg:text-sm 2xl:text-base bg-gray-800 rounded-lg mb-2 shadow-md cursor-default'
                 key={i}
               >
                 {tech}
@@ -51,7 +51,7 @@ const ProjectChild = ({ project }) => {
         </div>
         <div className='text-center'>
           <motion.div
-            className='inline-block  p-4 bg-yellow-500 rounded-full text-center cursor-pointer'
+            className='inline-block  py-3 px-4 bg-[#00feda] rounded-full text-center text-black cursor-pointer'
             variants={projectVariants}
             animate='buttonHover'
           >

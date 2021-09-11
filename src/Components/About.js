@@ -20,7 +20,7 @@ import inDesign from './img/logos/indesign.svg';
 import photoShop from './img/logos/photoshop.svg';
 import illustrator from './img/logos/illustrator.svg';
 
-import { motion } from 'framer-motion';
+import { motion, useCycle } from 'framer-motion';
 import PropTypes from 'prop-types';
 
 const techMotion = {
@@ -83,26 +83,25 @@ const iconMotion = {
 };
 
 const About = ({ intro1, intro2 }) => {
+  const [birdDisco, cycleBirdDisco] = useCycle('initial', 'hover');
   return (
-    <section
-      id='about'
-      className='bg-gray-700 font-montserrat text-white pt-20'
-    >
-      <h1 className='text-4xl lg:text-5xl text-center md:text-left lg:ml-12  font-bold font-inter tracking-wider mb-8'>
-        <i className='fas fa-question-circle' /> ABOUT
+    <section id='about' className='font-montserrat text-white pt-20'>
+      <h1 className='text-4xl lg:text-5xl text-center md:text-left lg:ml-12 font-inter tracking-wider mb-8'>
+        ABOUT
       </h1>
       <div className='grid lg:grid-cols-2 md:gap-6 md:w-3/4 mx-auto'>
-        <div className='inline-block py-10 justify-center'>
+        <div className='inline-block pt-6 pb-10 justify-center'>
           <motion.img
             src={about}
             alt='bird on monitor'
-            className='w-2/3 lg:w-1/2 mx-auto rounded-full border-4 border-white shadow-lg mb-8'
+            className='w-2/3 lg:w-2/5 mx-auto rounded-full border-4 border-white shadow-lg mb-8'
             variants={birdMotion}
             initial='initial'
             whileHover='hover'
-            whileTap='hover'
+            animate={birdDisco}
+            onTap={() => cycleBirdDisco()}
           />
-          <div className='text-lg text-gray-200 mb-8 w-11/12 mx-auto'>
+          <div className='text-[#00ffff] mb-8 w-11/12 mx-auto'>
             <p className='whitespace-pre-line mb-2'>{intro1}</p>
             <p>{intro2}</p>
             <div className=' my-4 text-center '>
@@ -132,11 +131,7 @@ const About = ({ intro1, intro2 }) => {
           </div>
         </div>
         <div className='row-span-4 mb-12'>
-          <div className='bg-gray-800 p-4 shadow-lg'>
-            <h2 className='mb-4 text-2xl font-inter ml-4 font-semibold tracking-wider'>
-              <i className='fas fa-tools mr-3' />
-              Technical Skills
-            </h2>
+          <div className='p-4'>
             <motion.div
               className='bg-gray-400 p-4 shadow-lg mb-4 rounded-lg'
               variants={techMotion}

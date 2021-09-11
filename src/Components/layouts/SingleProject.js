@@ -58,21 +58,6 @@ const barVariants = {
   },
 };
 
-const buttonMotion = {
-  initial: {
-    scale: 1,
-  },
-  hover: {
-    scale: 1.2,
-    transition: {
-      scale: {
-        duration: 0.5,
-        ease: 'easeInOut',
-      },
-    },
-  },
-};
-
 const gitMotion = {
   initial: {
     scale: 1,
@@ -123,16 +108,16 @@ const SingleProject = () => {
             Back to Previous Page
           </div>
           <motion.div
-            className='absolute inset-0 bg-[#00feda] bg-opacity-80'
+            className='absolute inset-0 bg-[#00feda]'
             variants={barVariants}
           />
         </motion.button>
         {project && (
           <div>
-            <h1 className='font-inter text-4xl md:text-6xl mb-6 tracking-wider font-semibold mx-6'>
+            <h1 className='font-inter text-4xl lg:text-6xl mb-6 tracking-wider mx-6'>
               {name}
             </h1>
-            <div className='my-4 md:my-0 md:p-4 grid grid-cols-5 gap-1 md:gap-4'>
+            <div className='my-4 lg:my-0 md:p-4 grid grid-cols-5 gap-1 md:gap-4'>
               <div className='col-span-4 overflow-hidden'>
                 <img
                   src={image1}
@@ -148,8 +133,8 @@ const SingleProject = () => {
                 />
               </div>
             </div>
-            <div className='grid md:grid-cols-3 md:px-4 md:gap-4'>
-              <div className='mx-4 md:mx-0 p-4 bg-gray-600 mb-4'>
+            <div className='grid lg:grid-cols-3 lg:px-4 lg:gap-4'>
+              <div className='mx-4 lg:mx-0 p-4 border border-[#00feda] mb-4'>
                 <h1 className='text-2xl font-inter mb-4 border-b pb-2'>
                   Technologies
                 </h1>
@@ -162,7 +147,7 @@ const SingleProject = () => {
                     ))}
                 </div>
               </div>
-              <div className='md:col-span-2 p-4 mb-4'>
+              <div className='lg:col-span-2 p-4 mb-4'>
                 <h1 className='text-2xl font-inter mb-4 border-b pb-2'>
                   About this project
                 </h1>
@@ -188,13 +173,13 @@ const SingleProject = () => {
                     target='_blank'
                     rel='noreferrer'
                     className='relative inline-block border rounded-full border-white px-4 py-2 align-middle overflow-hidden'
-                    variants={buttonMotion}
+                    variants={motionVariants}
                     initial='initial'
                     whileHover='hover'
                     animate='initial'
                   >
                     <motion.div
-                      className='inset-0 absolute bg-pink-500 bg-opacity-80'
+                      className='inset-0 absolute bg-[#00feda]'
                       variants={barVariants}
                     />
                     <span className='relative'>Go to page</span>

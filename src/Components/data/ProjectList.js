@@ -12,7 +12,7 @@ const ProjectList = [
     image2:
       'https://res.cloudinary.com/dwgni1x3t/image/upload/q_auto/v1631050969/Portfolio/manguito2_gv1wt5.png',
     thumb:
-      'https://res.cloudinary.com/dwgni1x3t/image/upload/q_auto/v1631055073/Portfolio/mantuito_thumb_flz9nc.png',
+      'https://res.cloudinary.com/dwgni1x3t/image/upload/q_auto/v1631351807/Portfolio/manguito_veq9xk.png',
   },
   {
     id: '2',
@@ -27,7 +27,7 @@ const ProjectList = [
     image2:
       'https://res.cloudinary.com/dwgni1x3t/image/upload/q_auto/v1631053265/Portfolio/mango2_uztxe7.png',
     thumb:
-      'https://res.cloudinary.com/dwgni1x3t/image/upload/q_auto/v1631053266/Portfolio/mango1_xpfuqq.png',
+      'https://res.cloudinary.com/dwgni1x3t/image/upload/q_auto/v1631351807/Portfolio/mango_xwbk43.png',
   },
   {
     id: '3',
@@ -42,7 +42,7 @@ const ProjectList = [
     image2:
       'https://res.cloudinary.com/dwgni1x3t/image/upload/q_auto/v1631053265/Portfolio/nadia2_iqvdhz.png',
     thumb:
-      'https://res.cloudinary.com/dwgni1x3t/image/upload/q_auto/v1631055482/Portfolio/nadia_thumb_nwppzh.png',
+      'https://res.cloudinary.com/dwgni1x3t/image/upload/q_auto/v1631352023/Portfolio/LOGO_NAD_ghzcdw.png',
   },
   {
     id: '4',
@@ -57,7 +57,7 @@ const ProjectList = [
     image2:
       'https://res.cloudinary.com/dwgni1x3t/image/upload/q_auto/v1631053266/Portfolio/kt2_m76yya.png',
     thumb:
-      'https://res.cloudinary.com/dwgni1x3t/image/upload/q_auto/v1631055074/Portfolio/kt1_yklxe7.png',
+      'https://res.cloudinary.com/dwgni1x3t/image/upload/q_auto/v1631351599/Portfolio/kt-logo_worzpa.png',
   },
 ];
 

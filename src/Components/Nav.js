@@ -1,5 +1,5 @@
 import React from 'react';
-import logo2 from './img/logo2.png';
+import logo2 from './img/logo2.svg';
 import Hamburger from 'hamburger-react';
 import { motion } from 'framer-motion';
 
@@ -101,12 +101,12 @@ const hoverVariants = {
 
 const logoMotion = {
   initial: {
-    backgroundColor: '#fff',
+    backgroundColor: '#000',
   },
   animate: {
-    backgroundColor: ['#fff', '#00feda', '#ec4899', '#00feda', '#fff'],
+    backgroundColor: ['#000', '#00feda', '#000'],
     transition: {
-      duration: 2,
+      duration: 10,
       ease: 'linear',
       repeat: Infinity,
     },
@@ -114,7 +114,6 @@ const logoMotion = {
 };
 
 const Nav = ({ navBarOpen, setNavbarOpen }) => {
-  // const [navBarOpen, setNavbarOpen] = useState(false);
   return (
     <div className='z-50 sticky top-0 font-inter text-white'>
       <nav className='hidden md:block md:sticky md:top-0 w-40 h-screen bg-black items-center shadow-lg transition ease-in'>
@@ -129,7 +128,7 @@ const Nav = ({ navBarOpen, setNavbarOpen }) => {
               <motion.img
                 src={logo2}
                 alt='logo'
-                className='mx-auto w-1/2 p-2 rounded-full'
+                className='stroke-current mx-auto w-1/2 p-2 rounded-full'
                 variants={logoMotion}
                 initial='initial'
                 animate='animate'
@@ -185,7 +184,7 @@ const Nav = ({ navBarOpen, setNavbarOpen }) => {
           </motion.div>
         </motion.div>
         <motion.div
-          className='absolute bottom-0 w-full mb-6 md:mb-20'
+          className='absolute bottom-0 w-full mb-6 xl:mb-16'
           variants={menuVariants}
           initial='iconIni'
           animate='iconIn'

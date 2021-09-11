@@ -10,11 +10,13 @@ import SingleProject from './Components/layouts/SingleProject';
 import NotFound from './Components/layouts/NotFound';
 import Home from './Components/layouts/Home';
 
+import ScrollToTop from './Components/util/ScrollToTop';
+
 function App() {
   const [navBarOpen, setNavbarOpen] = useState(false);
   return (
     <AnimatePresence exitBeforeEnter>
-      <div className='md:flex bg-gray-800'>
+      <div className='md:flex bg-gray-900'>
         <HelmetProvider>
           <Helmet>
             <title>Bobby Kim</title>
@@ -24,15 +26,17 @@ function App() {
             />
           </Helmet>
           <Router>
-            <Nav navBarOpen={navBarOpen} setNavbarOpen={setNavbarOpen} />
-            <div className='w-full'>
-              <Switch>
-                <Route exact path='/' component={Home} />
-                <Route path='/projects/:id' component={SingleProject} />
-                <Route path='*' component={NotFound} />
-              </Switch>
-            </div>
-            <ToTop />
+            <ScrollToTop>
+              <Nav navBarOpen={navBarOpen} setNavbarOpen={setNavbarOpen} />
+              <div className='w-full'>
+                <Switch>
+                  <Route exact path='/' component={Home} />
+                  <Route path='/projects/:id' component={SingleProject} />
+                  <Route path='*' component={NotFound} />
+                </Switch>
+              </div>
+              <ToTop />
+            </ScrollToTop>
           </Router>
         </HelmetProvider>
       </div>
