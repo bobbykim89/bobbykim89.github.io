@@ -43,8 +43,7 @@ Hamburger-react\
 react-router-dom\
 React-helmet-async\
 framer-motion\
-emailjs-com\
-ts-particles
+emailjs-com
 
 ### Dev Dependencies
 
