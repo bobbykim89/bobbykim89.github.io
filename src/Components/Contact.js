@@ -131,7 +131,7 @@ const Contact = ({ setShowPopup }) => {
               <div className='mb-3'>
                 <h4 className='text-4xl tracking-wider'>CHANDLER, AZ</h4>
               </div>
-              <p className='text-2xl'>LET'S KEEP IN TOUCH</p>
+              <p className='text-2xl'>bobby.sihun.kim@gmail.com</p>
             </div>
           </div>
         </div>

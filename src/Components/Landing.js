@@ -46,17 +46,18 @@ const Landing = () => {
       />
       <div className='relative inline-block mx-auto mt-60'>
         <div className='inline-block mb-2 lg:mb-6 ml-8 lg:ml-20'>
-          <h1 className='text-3xl lg:text-6xl lg:tracking-wider leading-normal mb-4 text-shadow-xl'>
-            HI THIS IS BOBBY
-            <br />I AM A WEB DEVELOPER
+          <h1 className='text-4xl lg:text-6xl lg:tracking-wider leading-normal mb-4 text-shadow-xl'>
+            BOBBY KIM.
+            <br />
+            WEB DEVELOPER.
           </h1>
         </div>
-        <div className='inline-block flex flex-wrap justify-center lg:justify-start text-md lg:ml-20 lg:text-2xl tracking-wider'>
+        <div className='inline-block flex flex-wrap justify-center lg:justify-start text-md lg:ml-24 lg:text-2xl tracking-wider'>
           <motion.a
             href='https://drive.google.com/file/d/1BFqAufQaxf9PGZCLVq8swfsNU4x4A6n2/view?usp=sharing'
             target='_blank'
             rel='noreferrer'
-            className='relative px-6 lg:px-8 py-2 lg:py-3 border border-white  lg:ml-4 hover:border-[#00feda] transition ease-in'
+            className='relative px-6 lg:px-8 py-2 lg:py-3 border border-white hover:border-[#00feda] transition ease-in'
             initial='initial'
             whileHover='hover'
             animate='initial'
@@ -71,7 +72,7 @@ const Landing = () => {
           </motion.a>
           <motion.a
             href='/#contact'
-            className='relative px-6 lg:px-8 py-2 lg:py-3 border border-white  ml-6 hover:border-[#00feda] transition ease-in'
+            className='relative px-6 lg:px-8 py-2 lg:py-3 border border-white ml-6 hover:border-[#00feda] transition ease-in'
             initial='initial'
             whileHover='hover'
             animate='initial'

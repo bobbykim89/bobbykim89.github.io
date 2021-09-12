@@ -82,7 +82,7 @@ const iconMotion = {
   },
 };
 
-const About = ({ intro1, intro2 }) => {
+const About = ({ intro }) => {
   const [birdDisco, cycleBirdDisco] = useCycle('initial', 'hover');
   return (
     <section id='about' className='font-montserrat text-white pt-20'>
@@ -90,7 +90,7 @@ const About = ({ intro1, intro2 }) => {
         ABOUT
       </h1>
       <div className='grid lg:grid-cols-2 md:gap-6 md:w-3/4 mx-auto'>
-        <div className='inline-block pt-6 pb-10 justify-center'>
+        <div className='order-2 lg:order-1 inline-block pt-6 pb-10 justify-center'>
           <motion.img
             src={about}
             alt='bird on monitor'
@@ -101,10 +101,9 @@ const About = ({ intro1, intro2 }) => {
             animate={birdDisco}
             onTap={() => cycleBirdDisco()}
           />
-          <div className='text-[#00feda] mb-8 w-11/12 mx-auto'>
-            <p className='whitespace-pre-line mb-2'>{intro1}</p>
-            <p>{intro2}</p>
-            <div className=' my-4 text-center '>
+          <div className='text-gray-200 mb-8 w-11/12 mx-auto'>
+            <p className='whitespace-pre-line mb-2 leading-relaxed'>{intro}</p>
+            <div className='my-4 text-center'>
               <motion.a
                 href='https://github.com/bobbykim89'
                 target='_blank'
@@ -130,10 +129,10 @@ const About = ({ intro1, intro2 }) => {
             </div>
           </div>
         </div>
-        <div className='row-span-4 mb-12'>
-          <div className='p-4'>
+        <div className='order-1 lg:order-2 row-span-4 mb-12'>
+          <div className='py-4 px-4 xl:px-8'>
             <motion.div
-              className='bg-gray-400 p-4 shadow-lg mb-4 rounded-lg'
+              className='p-4 shadow-lg mb-4 rounded-lg border border-[#00feda]'
               variants={techMotion}
               initial='initial'
               whileHover='hover'
@@ -155,14 +154,6 @@ const About = ({ intro1, intro2 }) => {
                   dragElastic={0.2}
                 />
                 <motion.img
-                  src={tailWind}
-                  alt='tailwind css'
-                  className='w-12 inline-block mr-4'
-                  drag
-                  dragConstraints={{ left: 0, top: 0, right: 0, bottom: 0 }}
-                  dragElastic={0.2}
-                />
-                <motion.img
                   src={vueJs}
                   alt='vue'
                   className='w-12 inline-block mr-4'
@@ -178,10 +169,18 @@ const About = ({ intro1, intro2 }) => {
                   dragConstraints={{ left: 0, top: 0, right: 0, bottom: 0 }}
                   dragElastic={0.2}
                 />
+                <motion.img
+                  src={tailWind}
+                  alt='tailwind'
+                  className='w-12 inline-block mr-4'
+                  drag
+                  dragConstraints={{ left: 0, top: 0, right: 0, bottom: 0 }}
+                  dragElastic={0.2}
+                />
               </div>
             </motion.div>
             <motion.div
-              className='bg-gray-400 p-4 shadow-lg mb-4 rounded-lg'
+              className='p-4 shadow-lg mb-4 rounded-lg border border-[#00feda]'
               variants={techMotion}
               initial='initial'
               whileHover='hover'
@@ -228,7 +227,7 @@ const About = ({ intro1, intro2 }) => {
               </div>
             </motion.div>
             <motion.div
-              className='bg-gray-400 p-4 shadow-lg mb-4 rounded-lg'
+              className='p-4 shadow-lg mb-4 rounded-lg border border-[#00feda]'
               variants={techMotion}
               initial='initial'
               whileHover='hover'
@@ -275,7 +274,7 @@ const About = ({ intro1, intro2 }) => {
               </div>
             </motion.div>
             <motion.div
-              className='bg-gray-400 p-4 shadow-lg rounded-lg'
+              className='p-4 shadow-lg rounded-lg border border-[#00feda]'
               variants={techMotion}
               initial='initial'
               whileHover='hover'
@@ -321,15 +320,12 @@ const About = ({ intro1, intro2 }) => {
 };
 
 About.propTypes = {
-  intro1: PropTypes.string.isRequired,
-  intro2: PropTypes.string.isRequired,
+  intro: PropTypes.string.isRequired,
 };
 
 About.defaultProps = {
-  intro1:
-    'Hello! This is Bobby, I am a self-taught web developer. I worked in the Korea Times Chicago as a web administrator/IT technician for 3 years before relocating to Chandler, AZ in the middle of summer. I have been continuously learning new frameworks and freelancing since then.',
-  intro2:
-    'I graduated from Purdue University with a Bachelor of Science in Industrial Engineering in 2018. I like hiking, cooking, videogaming and playing with my pet bird Manguito. My favorite IDE is Microsoft Word.',
+  intro:
+    'Self-taught web developer and freelancer. \nWeb administrator/IT technician at Korea Times Chicago (3 years). \nCurrently live in Arizona. \nPurdue University: Bachelor of Science in Industrial Engineering 2018. \nI like hiking, cooking, videogaming and playing with my pet bird Manguito. My favorite IDE is Microsoft Word.',
 };
 
 export default About;
