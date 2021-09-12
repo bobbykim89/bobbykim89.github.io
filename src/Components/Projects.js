@@ -17,7 +17,7 @@ const Projects = () => {
           project to see the project details page.
         </p>
       </div>
-      <div className='grid grid-flow-row md:grid-cols-2 xl:grid-cols-4 gap-3 mb-20 mx-2'>
+      <div className='grid grid-flow-row md:grid-cols-2 lg:grid-cols-4 gap-3 mb-20 mx-2'>
         {ProjectList &&
           ProjectList.map((project) => (
             <ProjectChild project={project} key={project.id} />

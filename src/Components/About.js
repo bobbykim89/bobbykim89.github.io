@@ -148,7 +148,7 @@ const About = ({ intro }) => {
                 <motion.img
                   src={reactJs}
                   alt='react'
-                  className='w-12 inline-block mr-4'
+                  className='w-12 h-12 inline-block mr-4'
                   drag
                   dragConstraints={{ left: 0, top: 0, right: 0, bottom: 0 }}
                   dragElastic={0.2}
@@ -156,7 +156,7 @@ const About = ({ intro }) => {
                 <motion.img
                   src={vueJs}
                   alt='vue'
-                  className='w-12 inline-block mr-4'
+                  className='w-12 h-12 inline-block mr-4'
                   drag
                   dragConstraints={{ left: 0, top: 0, right: 0, bottom: 0 }}
                   dragElastic={0.2}
@@ -164,7 +164,7 @@ const About = ({ intro }) => {
                 <motion.img
                   src={nextJs}
                   alt='next'
-                  className='w-16 inline-block mr-4'
+                  className='w-16 h-12 inline-block mr-4'
                   drag
                   dragConstraints={{ left: 0, top: 0, right: 0, bottom: 0 }}
                   dragElastic={0.2}
@@ -172,7 +172,7 @@ const About = ({ intro }) => {
                 <motion.img
                   src={tailWind}
                   alt='tailwind'
-                  className='w-12 inline-block mr-4'
+                  className='w-12 h-12 inline-block mr-4'
                   drag
                   dragConstraints={{ left: 0, top: 0, right: 0, bottom: 0 }}
                   dragElastic={0.2}
@@ -195,7 +195,7 @@ const About = ({ intro }) => {
                 <motion.img
                   src={expressJs}
                   alt='expressJs'
-                  className='w-20 inline-block mr-4'
+                  className='w-20 h-12 inline-block mr-4'
                   drag
                   dragConstraints={{ left: 0, top: 0, right: 0, bottom: 0 }}
                   dragElastic={0.2}
@@ -203,7 +203,7 @@ const About = ({ intro }) => {
                 <motion.img
                   src={nodeJs}
                   alt='nodeJs'
-                  className='w-12 inline-block mr-4'
+                  className='w-12 h-12 inline-block mr-4'
                   drag
                   dragConstraints={{ left: 0, top: 0, right: 0, bottom: 0 }}
                   dragElastic={0.2}
@@ -211,7 +211,7 @@ const About = ({ intro }) => {
                 <motion.img
                   src={mongoDb}
                   alt='Mongo DB'
-                  className='w-20 inline-block mr-4'
+                  className='w-20 h-12 inline-block mr-4'
                   drag
                   dragConstraints={{ left: 0, top: 0, right: 0, bottom: 0 }}
                   dragElastic={0.2}
@@ -219,7 +219,7 @@ const About = ({ intro }) => {
                 <motion.img
                   src={graphQl}
                   alt='graphQL'
-                  className='w-12 inline-block mr-4'
+                  className='w-12 h-12 inline-block mr-4'
                   drag
                   dragConstraints={{ left: 0, top: 0, right: 0, bottom: 0 }}
                   dragElastic={0.2}
@@ -242,7 +242,7 @@ const About = ({ intro }) => {
                 <motion.img
                   src={windows}
                   alt='windows'
-                  className='w-12 inline-block mr-4'
+                  className='w-12 h-12 inline-block mr-4'
                   drag
                   dragConstraints={{ left: 0, top: 0, right: 0, bottom: 0 }}
                   dragElastic={0.2}
@@ -250,7 +250,7 @@ const About = ({ intro }) => {
                 <motion.img
                   src={ubuntu}
                   alt='ubuntu'
-                  className='w-12 inline-block mr-4'
+                  className='w-12 h-12 inline-block mr-4'
                   drag
                   dragConstraints={{ left: 0, top: 0, right: 0, bottom: 0 }}
                   dragElastic={0.2}
@@ -258,7 +258,7 @@ const About = ({ intro }) => {
                 <motion.img
                   src={wordPress}
                   alt='wordPress'
-                  className='w-12 inline-block mr-4'
+                  className='w-12 h-12 inline-block mr-4'
                   drag
                   dragConstraints={{ left: 0, top: 0, right: 0, bottom: 0 }}
                   dragElastic={0.2}
@@ -266,7 +266,7 @@ const About = ({ intro }) => {
                 <motion.img
                   src={strapi}
                   alt='strapi'
-                  className='w-12 inline-block mr-4'
+                  className='w-12 h-12 inline-block mr-4'
                   drag
                   dragConstraints={{ left: 0, top: 0, right: 0, bottom: 0 }}
                   dragElastic={0.2}
@@ -289,7 +289,7 @@ const About = ({ intro }) => {
                 <motion.img
                   src={inDesign}
                   alt='inDesign'
-                  className='w-12 inline-block mr-4'
+                  className='w-12 h-12 inline-block mr-4'
                   drag
                   dragConstraints={{ left: 0, top: 0, right: 0, bottom: 0 }}
                   dragElastic={0.2}
@@ -297,7 +297,7 @@ const About = ({ intro }) => {
                 <motion.img
                   src={illustrator}
                   alt='illustrator'
-                  className='w-12 inline-block mr-4'
+                  className='w-12 h-12 inline-block mr-4'
                   drag
                   dragConstraints={{ left: 0, top: 0, right: 0, bottom: 0 }}
                   dragElastic={0.2}
@@ -305,7 +305,7 @@ const About = ({ intro }) => {
                 <motion.img
                   src={photoShop}
                   alt='photoShop'
-                  className='w-12 inline-block mr-4'
+                  className='w-12 h-12 inline-block mr-4'
                   drag
                   dragConstraints={{ left: 0, top: 0, right: 0, bottom: 0 }}
                   dragElastic={0.2}
