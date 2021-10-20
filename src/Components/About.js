@@ -19,6 +19,7 @@ import ubuntu from './img/logos/ubuntu.svg';
 import inDesign from './img/logos/indesign.svg';
 import photoShop from './img/logos/photoshop.svg';
 import illustrator from './img/logos/illustrator.svg';
+import xd from './img/logos/xd.svg';
 
 import { motion, useCycle } from 'framer-motion';
 import PropTypes from 'prop-types';
@@ -286,6 +287,14 @@ const About = ({ intro }) => {
                 Design Tools
               </motion.h3>
               <div className='flex justify-center'>
+                <motion.img
+                  src={xd}
+                  alt='xd'
+                  className='w-12 h-12 inline-block mr-4'
+                  drag
+                  dragConstraints={{ left: 0, top: 0, right: 0, bottom: 0 }}
+                  dragElastic={0.2}
+                />
                 <motion.img
                   src={inDesign}
                   alt='inDesign'
